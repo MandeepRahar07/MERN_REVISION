@@ -4,13 +4,13 @@ const CustmerShcema = mongoose.Schema({
         type : String,
         required : true 
     },
-    price : {
+    city : {
         type : String,
         required : true 
     }
 })
 
-const CustmerModels = mongoose.model("customer", ItemsShcema);
+const CustmerModels = mongoose.model("customer", CustmerShcema);
 module.exports = {
     CustmerModels
 }
