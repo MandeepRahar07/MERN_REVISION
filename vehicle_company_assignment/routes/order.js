@@ -9,15 +9,15 @@ const { OrderModel } = require('../models/order');
 const { DeliveryVehicleModel } = require('../models/deliveryvehicles');
 const { CustmerModels } = require('../models/customers');
 
-router.get("/vehicles", async (req, res) => {
+router.get("/orderget", async (req, res) => {
     try {
-      const data = await DeliveryVehicleModel.find();
-      res.status(200).json(data);
+        const orders = await OrderModel.find().populate("customerId").populate("itemId").populate("deliveryVehicleId");
+        res.status(200).json(orders);
     } catch (error) {
-      console.error("Error while fetching items:", error);
-      res.status(500).json({ error: "Internal Server Error" });
+        console.error(error);
+        res.status(500).json({ error: "Internal Server Error" });
     }
-  });
+});
 
 // POST request to create orders based on matching city criteria
 router.post("/orderpost", async (req, res) => {

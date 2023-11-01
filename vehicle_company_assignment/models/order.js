@@ -1,26 +1,24 @@
 const mongoose = require("mongoose");
-// const AutoIncrement = require("mongoose-sequence")(mongoose);
 
 const OrderSchema = new mongoose.Schema({
   orderNumber: {
-    type: Number,
+    type: String, // Change the data type to String
     unique: true,
   },
   itemId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "item", 
+    ref: "item",
   },
   price: {
     type: Number,
   },
-
   customerId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "customer",
   },
   deliveryVehicleId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "deliveryVehicle", 
+    ref: "deliveryVehicle",
   },
   isDelivered: {
     type: Boolean,
@@ -28,17 +26,13 @@ const OrderSchema = new mongoose.Schema({
   },
 });
 
-// Define a pre-hook to generate the incremental order number
-// OrderSchema.plugin(AutoIncrement, { id: "order_number_seq", inc_field: "orderNumber" });
 OrderSchema.pre("save", async function (next) {
   try {
-    // Find the maximum order number in the collection
     const highestOrder = await OrderModel.findOne({}, {}, { sort: { orderNumber: -1 } });
 
     let newOrderNumber = "0001"; // Default initial order number
 
     if (highestOrder) {
-      // Increment the last order number and format it with leading zeros
       const lastOrderNumber = parseInt(highestOrder.orderNumber, 10);
       const nextOrderNumber = lastOrderNumber + 1;
       newOrderNumber = nextOrderNumber.toString().padStart(4, "0");
@@ -50,7 +44,6 @@ OrderSchema.pre("save", async function (next) {
     next(error);
   }
 });
-
 
 const OrderModel = mongoose.model("Order", OrderSchema);
 
