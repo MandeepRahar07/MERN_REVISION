@@ -10,13 +10,11 @@ router.get('/itemget', async(req,res)=>{
 router.post('/itempost', async(req,res)=>{
     const {name, price}= req.body;
     try{
-
         const data = await ItemModels.create({
             name, 
             price
         })
         res.send( data);
-
     }catch(err){
         res.send({msg : "post not done"})
     }
@@ -26,15 +24,12 @@ router.post('/itempost', async(req,res)=>{
 router.put('/itempost/:id', async (req, res) => {
     const { id } = req.params; 
     const { name, price } = req.body; 
-
     try {
-     
         const updatedItem = await ItemModels.findByIdAndUpdate(
             id,
             { name, price },
             { new: true }
         );
-
         if (!updatedItem) {
             return res.status(404).json({ msg: "Item not found" });
         }

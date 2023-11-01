@@ -1,4 +1,4 @@
-import { GET_PROD } from "./actiontype";
+import { GET_PROD, TOTAL_COUNT } from "./actiontype";
 import { POST_PROD } from "./actiontype";
 import { EDIT_PROD } from "./actiontype";
 import { DELETE_PROD } from "./actiontype";
@@ -13,11 +13,15 @@ export const fetchProductData = (search, sorting, filter, page) => async (dispat
     const res = await axios.get(
       `http://localhost:3000/mandeep?${searching}${sort}${filterBy}&_page=${page}&_limit=4`
     );
-
     dispatch({
       type: GET_PROD,
       payload: res.data,
     });
+const count = res.headers.get("X-Total-Count");         
+            dispatch({
+              type : TOTAL_COUNT,
+              payload : count
+            }) 
   } catch (err) {
     console.log(err);
   }
@@ -33,7 +37,6 @@ export const fetchProductDatabyid = (id) => async (dispatch) => {
       type: GET_BY_ID,
       payload: res.data,
     });
-    return res.data; // Return the fetched data
   } catch (err) {
     console.log(err);
     throw err;
@@ -68,7 +71,6 @@ export const PutProductdata = (id, payload) => async (dispatch) => {
     }
   };
   
-
 
   export const DeleteProduct = (id) => async (dispatch) => {
     try {

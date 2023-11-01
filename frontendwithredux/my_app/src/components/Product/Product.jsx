@@ -13,9 +13,14 @@ function Product() {
  console.log(page);
 
   const productdata = useSelector((state) => state.product.productdata);
+  const tatalpage = useSelector((state) => state.product.totalcount);
+
+  console.log(tatalpage);
+
   const dispatch = useDispatch();
 
-
+  const disablepage = Math.ceil(tatalpage/4)
+  console.log(disablepage)
 
   useEffect(() => {
     dispatch(fetchProductData(search,sorting,filter,page));
@@ -71,14 +76,19 @@ function Product() {
               <button>Edit</button>
             </Link>
             <button onClick={() => handleDelete(e.id)}>Delete</button>
+            <Link to ={ `/details/${e.id}`} >
+            <button  >More Details</button>
+            </Link>
           </div>
         ))}
       </div>
+      
+
 
       <div>
-  <button onClick={() => setpage(page - 1)}>Previous</button>
+  <button onClick={() => setpage(page - 1)} disabled = {page===1}>Previous</button>
   <button>{page}</button>
-  <button onClick={() => setpage(page + 1)}>Next</button>
+  <button onClick={() => setpage(page + 1)}  disabled = {page === disablepage}   >Next</button>
 </div>
 
     </div>

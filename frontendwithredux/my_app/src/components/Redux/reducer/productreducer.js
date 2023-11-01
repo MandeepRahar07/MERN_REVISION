@@ -1,9 +1,10 @@
 import React from 'react'
-import { DELETE_PROD, POST_PROD, SIGN_UP ,GET_BY_ID} from '../actiontype';
+import { DELETE_PROD, POST_PROD, SIGN_UP ,GET_BY_ID, TOTAL_COUNT} from '../actiontype';
 import { GET_PROD } from '../actiontype';
 const Intialvalue = {
     userdata : [],
-    productdata : []
+    productdata : [],
+    totalcount : 0
 }
 function Productreducer(state = Intialvalue ,{type, payload}) {
 
@@ -33,7 +34,12 @@ function Productreducer(state = Intialvalue ,{type, payload}) {
                       ...state,
                       productdata: payload,
                     };
-         
+                case TOTAL_COUNT:
+                    return{
+                        ...state,
+                      totalcount : payload
+                    }
+                    
         default :
          return state
     }

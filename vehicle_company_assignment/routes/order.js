@@ -3,6 +3,7 @@
 // Step 2: Fetch List of Delivery Vehicles (Already Implemented)
 
 // Step 3: Create an Order (Updated)
+
 const express = require("express");
 const router = express.Router();
 const { OrderModel } = require('../models/order');
@@ -31,6 +32,7 @@ router.post("/orderpost", async (req, res) => {
 
         const customer = await CustmerModels.findById(customerId);
         const customerCity = customer.city;
+        
         const deliveryVehicle = await DeliveryVehicleModel.findOne({ city: customerCity, activeOrdersCount: { $lt: 2 } });
 
         if (!deliveryVehicle) {

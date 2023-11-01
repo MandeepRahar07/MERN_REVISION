@@ -4,3 +4,5 @@ export const POST_PROD = "POST_PROD";
 export const EDIT_PROD = "EDIT_PROD";
 export const DELETE_PROD = 'DELETE_PROD';
 export const GET_BY_ID = 'GET_BY_ID';
+export const TOTAL_COUNT = 'TOTAL_COUNT';
+
