@@ -1,0 +1,59 @@
+Regular expressdions
+
+expression = 5+3 = 8 
+its is a sequence of the character hat define a search pattern 
+use => 
+1 programming language 
+/ni/
+                 email validation 
+                 student id
+
+2 Text processsing tools = Google form
+
+some uses;>
+1. search /validdate - to check if a string matches he pattern 
+2. to replace the matched pattern 
+3. to extract parts of a string tha match the pattern = filter
+
+
+
+Regular Expressiiion = Regex or regex:
+
+why ? 
+- intro to regular expressdions (just familiar its not in the deep)
+- quizes 
+
+Syntax 
+1. literal Syntax
+            /some pattern/
+
+2. constructor -
+                 new RegExp("some pattern")
+
+
+some basic characters hatt build a pattern
+   . any single character
+   * zero or more reqpetitiosn of the priceding/before/pervious charactor
+   + one or more repetitions of the precding character
+   ^ start of a line
+   $ end 
+
+       eloquentijavascript book for javascript
+
+1 we should be familiar with what reqex
+2 basic characters like .,*,+,^,$ extract
+
+
+.test 
+    - return true of false;
+    - regex.text(string)
+
+.match 
+    - return a matched value of null;
+    - string.match(regex)
+    - "albert.match(/a.+r/)"
+
+g - global finds all the matches, not just one;
+i-
+db.user.find({name : /man/i})
+
