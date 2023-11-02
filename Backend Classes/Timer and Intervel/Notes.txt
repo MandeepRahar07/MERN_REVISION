@@ -1,0 +1,66 @@
+Node = runtime inviroment outside the broswer for javscript
+       
+       Node server =>
+                    /GET/POST
+                    /from a file
+                    //from a DB
+                    //from an other API
+                    res.send (post)
+
+Express => to make clean code , easy way of handle http request
+
+Node => v8 engine + in built modiles(http fs) + 
+Event loop => 
+            wattch what the heck is evern loop
+            read the difference between event loop on browser vs event loop on Node
+
+Timers =>
+        settimeout
+        setimeinterval
+
+       call stack            event loop            stack       
+
+
+
+
+                             queue
+
+
+
+console.log(a); =. go to call stack and give direct output
+
+
+console.log(a);  => upar jese hi
+setTimeout(() => {
+    console.log("h")
+}, 1000);              => go to stack after complete one minute then move to queue after when call stack is empty then it will go call stacl and return us output
+
+console.log(x); upar jese hi ..
+output=> axh
+
+time now zero second => output => still same output bcx it will go one into stack
+
+
+Promise vs Timer +> Promise takes more priority
+fetch => 2 second
+settime out => 2 second
+
+.....................................
+setImmediate
+ print immediate everything
+ its also go to stack then immedaite come to queue then print
+its similar to serTimeout wih 0ms
+
+IO operation -> n/s calls, reading files, writing to a file 
+  in sice I/O now => setImmidiate will always take more priority than setTimeou(with 0ms)
+
+..............................
+process.nextTick => its take more priroity then setImmidate
+we use it to add something to micro task queue
+
+.............................
+micro task queue => promiss, process.nextTick
+its take more priority then normal queue , 
+its make a micro queue , real queue ki jagah
+
+.....................................
