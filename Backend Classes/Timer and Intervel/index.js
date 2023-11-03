@@ -26,8 +26,6 @@ process.nextTick(()=>{
 
 // so in I/O=> now setimmedaite take more priority then settime out with 0ms else eska ulta
 //in I/O and outside also => nextTick - immidate - settimeout
-
-
 //read and delele
 fs.readFile('./Notes.txt', "utf-8", (err, data)=>{
    // 5 seconds

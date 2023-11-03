@@ -1,0 +1,70 @@
+{
+  "mandeep": [
+    {
+      "id": 6,
+      "name": "watch",
+      "imagelink": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694713212/Croma%20Assets/Communication/Wearable%20Devices/Images/300965_0_bask7w.png?tr=w-480",
+      "price": 400,
+      "stockavilable": true,
+      "comingsoon": true,
+      "category": "watch"
+    },
+    {
+      "name": "mmmm",
+      "price": 555,
+      "category": "airpods",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "iphone15",
+      "imagelink": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692845702708",
+      "price": 1100,
+      "stockavilable": false,
+      "comingsoon": true,
+      "category": "iphone"
+    },
+    {
+      "id": 9,
+      "name": "iphone10",
+      "imagelink": "https://www.91-img.com/pictures/129877-v7-apple-iphone-xr-mobile-phone-large-4.jpg?tr=h-271,c-at_max,q-80,pr-true",
+      "price": 800,
+      "stockavilable": false,
+      "comingsoon": false,
+      "category": "iphone"
+    },
+    {
+      "id": 10,
+      "name": "watch",
+      "imagelink": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694713212/Croma%20Assets/Communication/Wearable%20Devices/Images/300965_0_bask7w.png?tr=w-480",
+      "price": 400,
+      "stockavilable": true,
+      "comingsoon": true,
+      "category": "watch"
+    },
+    {
+      "id": 11,
+      "name": "airpods",
+      "imagelink": "https://www.apple.com/newsroom/images/product/airpods/standard/Apple-AirPods-Pro-2nd-gen-hero-220907.jpg.landing-big_2x.jpg",
+      "price": 200,
+      "stockavilable": false,
+      "comingsoon": false,
+      "category": "airpods"
+    },
+    {
+      "id": 13,
+      "name": "watch",
+      "imagelink": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1694713212/Croma%20Assets/Communication/Wearable%20Devices/Images/300965_0_bask7w.png?tr=w-480",
+      "price": 400,
+      "stockavilable": true,
+      "comingsoon": true,
+      "category": "watch"
+    },
+    {
+      "name": "Mandeep Rahar",
+      "price": "3333",
+      "category": "watch",
+      "id": 14
+    }
+  ]
+}
