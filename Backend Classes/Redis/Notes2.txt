@@ -1,0 +1,85 @@
+install redis : 
+Window => we cant instal direct redis
+     now like mongodb = atlas
+     same like redis have 
+
+
+1) Redis -server in Our local computer b) redis labs
+2)Redis cli 
+3) npm package (specif application)
+
+//Ge started with Redis without installing anything
+// https://try.redis.io/
+
+SET age 21 (even number are store as string: )
+GET age 
+INCE +1
+DECR -1
+INCRBY age 3 +3
+incrby key Value
+DEL age (delete the key)
+DEL key
+
+// we wont be able o get all the keys
+// but can check if a key exists or not
+SET name masai
+
+EXISTS name 
+EXISTS key - check if a key is present or not
+append name school( append with the key value);
+get name = masaischool
+append name " bhiwani" (use for space)
+
+
+MGET => MULTIPLE GET
+MGET name age city coutry
+
+MSET => MULTIPLE SET
+MSET couser pt11 ec indarpal ia NhiptaKonHai 
+       key  value K   V       K   V 
+MGET couser ec ia
+
+Array 
+
+RPUSH  key_name value1 value2
+rpush mandeep reading swiming chatgpt walking 
+
+LPUSH......... push from the left side
+
+LRANGE  Key_Name starting_index Ending_index
+LRANGE mandeep 0 2
+LRANGE mandeep 0 -1 (all the element will come)
+
+LLEN key_name => list(array) length
+LLEN mandeep 
+
+LINDEX mandeep 3 (return value at that index)
+LPOS key_name value (returns index of a value)
+LPOS  mandeep reading
+
+Rename key New_key_name
+rename mandeep sandeep
+
+objectconst user = {
+    name : "mandeep'
+    city : "bhiwani'
+    role : be
+}
+
+HSET user name mandeep city mumbai role BE
+HGETALL user
+HGET key value 
+HGET user mandeep
+
+
+set gold_rate 5000
+set  gold_rate 9000 EX 6 (now it will expire after 6 sec)
+                    EXAT (TIMESTAMP CONVERSION TOOLS)
+  
+
+
+
+
+
+
+

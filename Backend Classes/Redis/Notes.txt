@@ -1,0 +1,41 @@
+mamoizaationa and caching +> anything  we will using in future we save it result caching 
+
+cache => 
+    in computing a hche is a hardware or software component that stores data future request for
+    that data can be served faster; the data stored in a ceche might be the result of an earliar compputation or a copy of datasored eveywhere
+   
+   cache is not permanent;
+
+Database =>
+SQL - MySQL, Postgres
+NoAQL = MongoDB
+GrapghDB - neo4j
+KV - Key Value
+
+
+Redis =>
+
+Remote Dictionary Server
+Re     di          S
+Redis
+it is an open source tool
+it is a key-Value type MongoDB
+it stores data and maintain it in-Memory
+
+
+
+Redis 
+it is used for caching
+it is also used as a MongoDB
+Pub/Sub operations (301)
+Implementing message queues (imp)
+
+Redis Data type 
+
+String 
+List (array)
+Set ( other way object )
+Sorted Set
+Hash
+
+Redis.io and explore the data type of the redis 
