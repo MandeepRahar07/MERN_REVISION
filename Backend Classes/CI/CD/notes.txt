@@ -1,0 +1,24 @@
+CI/cD
+
+continous Interation and Deployment
+
+Masai update
+ for any update , go down for some min and back then again
+
+ Github Actions => Automate software developmet workflows
+=> Build , test, deploy code or trigger notification
+=> aotomate repetitive tasks
+      runnig npx eslint index.js
+      npm run test
+      
+
+
+ Code => pushed => write test cases =>
+ code ........................=> deployed
+
+
+npm i eslint => something wrong then checkit(( 2 space after the if conditions))
+npm i @eslint.config 
+
+//////////////////////////////////////////////////////////
+
