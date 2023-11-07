@@ -36,4 +36,6 @@ creae .github folder and a .yml file
             - run : npx esint index.js
 
             go to github action for more explainations
-            
+
+** IF ANY OF THE STEPS IN A JOB FAIL M THE NEXT STEPS WON'T  BE EXECUTED **
+ 
