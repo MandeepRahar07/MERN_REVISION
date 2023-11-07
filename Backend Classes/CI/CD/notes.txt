@@ -10,7 +10,7 @@ Masai update
 => aotomate repetitive tasks
       runnig npx eslint index.js
       npm run test
-      
+
 
 
  Code => pushed => write test cases =>
@@ -22,3 +22,18 @@ npm i @eslint.config
 
 //////////////////////////////////////////////////////////
 
+step 1 
+creae .github folder and a .yml file
+    
+    yml => yaml => yaml are not a markup language 
+
+    2) when - on  (on commit 
+       what task - jobs (npx eslin index.js
+
+    3) jobs => 
+            runs- on : window-latest, macos- latest
+            steps:
+            - run : npx esint index.js
+
+            go to github action for more explainations
+            
