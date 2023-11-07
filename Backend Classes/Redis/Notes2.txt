@@ -77,9 +77,114 @@ set  gold_rate 9000 EX 6 (now it will expire after 6 sec)
                     EXAT (TIMESTAMP CONVERSION TOOLS)
   
 
+TTL => time to live
+  means its expire in 60 sec or distroy
 
+  
+  Installing Redis on Windows:
 
+Redis can be installed on Windows, but there is no official Windows version. You can either use WSL (Windows Subsystem for Linux) or run Redis in a virtual machine.
+Getting Started with Redis:
 
+To get started with Redis without installing it locally, you can use the online Redis console: try.redis.io.
+Basic Redis Commands:
 
+SET and GET:
+SET age 21: Store the age as a string.
+GET age: Retrieve the age.
+INCR: Increment the stored number by 1.
+DECR: Decrement the stored number by 1.
+INCRBY age 3: Increment the age by 3.
+DEL age: Delete the "age" key.
+Example:
 
+shell
+Copy code
+SET age 21
+GET age
+INCR age
+DECR age
+INCRBY age 3
+DEL age
+EXISTS:
+EXISTS name: Check if a key named "name" exists.
+Example:
 
+shell
+Copy code
+SET name masai
+EXISTS name
+APPEND:
+APPEND name school: Append "school" to the value of the "name" key.
+Example:
+
+shell
+Copy code
+SET name masai
+APPEND name " school"
+GET name
+MGET and MSET:
+MGET name age city country: Retrieve multiple values.
+MSET course pt11 ec indarpal india: Set multiple key-value pairs.
+Example:
+
+shell
+Copy code
+MGET name age city country
+MSET course pt11 ec indarpal india
+List (Array) Operations:
+
+RPUSH and LPUSH:
+RPUSH key_name value1 value2: Add values to the end of a list.
+LPUSH key_name value1 value2: Add values to the beginning of a list.
+Example:
+
+shell
+Copy code
+RPUSH mandeep reading swimming chatgpt walking
+LPUSH mandeep jogging
+
+LRANGE:
+LRANGE key_name starting_index ending_index: Retrieve a range of elements from a list.
+Use a negative index for "ending_index" to get all elements.
+Example:
+
+shell
+Copy code
+LRANGE mandeep 0 2
+LRANGE mandeep 0 -1
+LLEN and LINDEX:
+LLEN key_name: Get the length of a list.
+LINDEX key_name index: Retrieve the value at a specific index.
+Example:
+
+shell
+Copy code
+LLEN mandeep
+LINDEX mandeep 3
+LPOS:
+LPOS key_name value: Find the index of a value in a list.
+Example:
+
+shell
+Copy code
+LPOS mandeep reading
+Renaming and Expiring Keys:
+
+Use RENAME to change the name of a key and EXPIRE to set a time-to-live (TTL) for a key.
+Example:
+
+shell
+Copy code
+RENAME mandeep sandeep
+SET gold_rate 5000
+EXPIRE gold_rate 6
+TTL (Time-to-Live):
+
+Use TTL to check the time remaining for a key to expire.
+Example:
+
+shell
+Copy code
+TTL gold_rate
+These updated notes and examples should help you understand and use Redis effectively for various data storage and retrieval needs in the future.

@@ -1,0 +1,124 @@
+monitoring and logging
+
+monitoring - to keep an eye on something 
+
+12 gb => 11.5gb 
+50 gb 
+
+fuel meter
+
+why monitoring
+
+PM2
+
+logging => kind of keeping the record and print the some where and record at some where;
+are monitoring and logging same - NO
+
+why loggingis important ? 
+         securiy queards at apartment
+         name, phone number, ime of entry
+         logs are helping
+         call logs
+         coding 
+
+RCA => root cause analysis
+=>  why this happen
+-> server crashes
+   why server crashes? 
+   
+  IP address
+  time
+  which endpoint was used 
+
+  what not to log? = Node and express
+  be mindfull of what you log and hat not to log;
+
+
+  how to log?
+    1) custom middleware
+    2) logging libraries
+       morgan 
+       wastan
+       lambda
+       log4js
+       pino
+       bunya
+
+
+
+take winstion and implement logging using taht:
+       searct NPM winston
+      npm i express-winston
+      npm i winston
+      
+levels => configure ou logging;
+=> warning, error, info etc
+according to more serious =>
+info => warning => error
+=> when we define alevel to log, tha level and more serious levels get logged;
+
+   warnign = nott logged
+   error = not logged
+   info => logged
+
+   //monitoring
+
+   PM2
+   pm2 start index.js
+   pm2 stop index.js
+   pm2 list
+   pm2 monit
+   
+
+   sentry 
+   cloudwatch
+
+Monitoring:
+
+Monitoring involves keeping an eye on various aspects of a system or application, such as performance metrics, resource usage, and errors.
+It helps detect issues and anomalies in real-time and ensures the system is running as expected.
+Example: Monitoring the fuel meter in a vehicle to know when it's time for a refill.
+Why Monitoring:
+
+Monitoring is crucial to ensure the reliability and availability of your application.
+It helps identify issues and bottlenecks early, allowing for timely intervention.
+Tools like PM2 can be used to manage Node.js applications and provide monitoring capabilities.
+Logging:
+
+Logging involves recording and storing information, events, or errors that occur within an application.
+It is important for various purposes, including debugging, security, and auditing.
+Logs are typically text-based and can be stored in files, databases, or external systems.
+Why Logging is Important:
+
+Logging is essential for security, as it can track who accessed a system, what they did, and when.
+It aids in root cause analysis (RCA) by providing a history of events that led to a particular issue or error.
+Useful for tracking user activity, debugging, and complying with regulations.
+Root Cause Analysis (RCA):
+
+RCA is a process of identifying the underlying causes of a problem or issue.
+In the context of server crashes, RCA involves investigating factors like IP addresses, timestamps, and the specific endpoint or operation that caused the crash.
+What Not to Log:
+
+Sensitive information, such as passwords or personal data, should not be logged.
+Avoid logging excessive or verbose information that can clutter logs.
+How to Log:
+
+Logging can be implemented using custom middleware in your application or by using dedicated logging libraries.
+Logging libraries, like Winston, Morgan, or Pino, provide structured and customizable logging capabilities.
+Winston Logging Library:
+
+Winston is a popular logging library for Node.js.
+It allows you to define log levels (e.g., info, warning, error) and control what gets logged based on severity.
+Levels in Logging:
+
+Logging levels are used to categorize the severity of log messages.
+Common levels include info, warning, and error.
+When you define a log level, all more serious levels (e.g., warning and error) are also logged.
+Monitoring Tools:
+
+PM2 is a process manager for Node.js applications that provides monitoring, process management, and load balancing.
+It allows you to start, stop, and manage Node.js processes and provides monitoring capabilities with commands like pm2 monit.
+Additional Monitoring Tools:
+
+Other monitoring tools include Sentry for error tracking and CloudWatch for AWS-based applications.
+It's important to use monitoring and logging in your application to ensure its performance, security, and reliability. The specific tools and techniques you use may vary depending on your application's requirements and technology stack.

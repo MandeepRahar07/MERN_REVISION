@@ -57,3 +57,56 @@ g - global finds all the matches, not just one;
 i-
 db.user.find({name : /man/i})
 
+Regular Expressions (Regex):
+
+A regular expression is a sequence of characters that defines a search pattern.
+Uses of Regular Expressions:
+
+Programming Language:
+
+Used in programming languages for tasks like pattern matching, searching, and validation.
+Common uses include email validation and checking student IDs.
+Text Processing Tools (e.g., Google Forms):
+
+Regex can be used in text processing tools, such as Google Forms, for data validation and extraction.
+Basic Regex Syntax:
+
+Literal Syntax:
+
+/some pattern/
+Constructor:
+
+new RegExp("some pattern")
+Basic Regex Characters:
+
+.: Matches any single character.
+*: Matches zero or more repetitions of the preceding character.
++: Matches one or more repetitions of the preceding character.
+^: Matches the start of a line.
+$: Matches the end of a line.
+Using Regular Expressions:
+
+Testing with .test method:
+regex.test(string) returns true or false.
+Example:
+
+javascript
+Copy code
+/ni/.test("programming"); // Returns true
+Matching with .match method:
+string.match(regex) returns a matched value or null.
+Example:
+
+javascript
+Copy code
+"albert".match(/a.+r/); // Returns ["albert"]
+Modifiers:
+
+g (global): Finds all matches, not just the first one.
+i (case-insensitive): Ignores case in matching.
+Example:
+
+javascript
+Copy code
+"DatabaseUser".match(/man/i); // Returns "DatabaseUser"
+These updated notes and examples should help you understand and use regular expressions for various pattern matching and validation tasks in the future.

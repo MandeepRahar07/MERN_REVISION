@@ -6,7 +6,7 @@ import { fetchProductDatabyid } from '../Redux/actions';
 
 function ProductDetails() {
     const {id} = useParams();
-    const productdata = useSelector((state) => state.product.productdata);
+    const productdetail = useSelector((state) => state.product.productdetail);
     const dispatch = useDispatch();
     useEffect(()=>{
        dispatch(fetchProductDatabyid(id))
@@ -16,7 +16,12 @@ function ProductDetails() {
 
         <div>
             {
-                <h1>{productdata.name}</h1>
+              <div>
+
+                <h1>{productdetail.name}</h1>
+                <h3>{productdetail.price}</h3>
+                <h4>{productdetail.category}</h4>
+              </div>
             }
         </div>
     </div>

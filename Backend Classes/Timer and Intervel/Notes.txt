@@ -64,3 +64,52 @@ its take more priority then normal queue ,
 its make a micro queue , real queue ki jagah
 
 .....................................
+Node.js: 
+- Node.js is a runtime environment for JavaScript that operates outside the browser, allowing you to run JavaScript on the server.
+
+Express.js: 
+- Express is a web framework for Node.js that simplifies handling HTTP requests, making it easier to write clean and organized code.
+
+Node.js Components: 
+- Node.js consists of the V8 JavaScript engine, built-in modules like http and fs, and the event loop.
+
+Event Loop: 
+- The event loop is a critical part of Node.js that handles asynchronous operations and event-driven programming.
+- It continuously checks the call stack for tasks and offloads I/O operations to the operating system, ensuring non-blocking execution.
+
+Timers: 
+- Timers include setTimeout and setInterval, which schedule functions to run after a specified time or at intervals.
+
+Event Loop Process: 
+1. The event loop maintains the call stack, where synchronous JavaScript code executes.
+2. It also has a queue for tasks waiting to execute, such as I/O operations and timer callbacks.
+3. The event loop checks the call stack and, if empty, moves tasks from the queue to the call stack for execution.
+
+Examples of Event Loop and Timers:
+console.log(a); // Executes immediately, output: a
+
+console.log(a); // Executes immediately, output: a
+setTimeout(() => {
+    console.log("h");
+}, 1000); // After 1 second, output: h
+
+console.log(x); // Executes immediately, output: xh
+
+// Time now at zero seconds
+// Output: "a", then after 1 second, "h"
+
+// SetImmediate vs. SetTimeout
+setImmediate(() => {
+    console.log("Immediate");
+}); // Output: "Immediate" (has priority over setTimeout with 0ms)
+
+// IO Operation (Network/FS calls) and Event Loop
+// setImmediate will have higher priority over setTimeout with 0ms
+
+// process.nextTick for Micro Task Queue
+process.nextTick(() => {
+    console.log("Next Tick");
+}); // Output: "Next Tick" (has higher priority)
+
+// Micro Task Queue (Higher Priority than Normal Queue)
+// Consists of promises and process.nextTick tasks
