@@ -6,9 +6,10 @@ import { USER_DATA } from '../actiontype'
 
 const Intialvalue = {
     UserData : [],
-    ProductData : [],
     CurrentUser : {}
 };
+
+
 
 function Userreducer(state = Intialvalue , {type, payload}) {
     switch(type){

@@ -16,5 +16,10 @@
       "city": "11111",
       "id": 2
     }
+  ],
+  "product":[
+    {  "id" : 1,
+      "name" : "Mandeep Rahar"
+    }
   ]
 }

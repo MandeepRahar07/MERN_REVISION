@@ -4,6 +4,7 @@ import SignupD from './components/Signup/Signup';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import AllRoutes from './components/Routes/AllRoutes';
+import Product from './components/Products/Product';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      {/* <Login/> */}
      <Navbar/>
      <AllRoutes/>
+     <Product/>
 
     </div>
   );
