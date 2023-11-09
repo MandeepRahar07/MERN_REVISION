@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { LOG_IN, SING_UP } from '../actiontype'
 import { USER_DATA } from '../actiontype'
 

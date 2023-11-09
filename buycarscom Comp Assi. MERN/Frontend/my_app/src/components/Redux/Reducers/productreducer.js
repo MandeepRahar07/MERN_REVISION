@@ -1,8 +1,9 @@
-import React from 'react'
-import { PRODUCT_DATA } from '../actiontype'
+
+import { DELETE_MULTYPAL, PRODUCT_ADD, PRODUCT_DATA ,PRODUCT_ONE} from '../actiontype'
 
 const intialValue = {
-    ProductData : []
+    ProductData : [],
+    ProductOne : {}
 }
 function Productreducer(state = intialValue, {type, payload}) {
     switch(type){
@@ -11,8 +12,26 @@ function Productreducer(state = intialValue, {type, payload}) {
             ...state,
             ProductData : payload
         }
-    
-        default :
+      
+        case PRODUCT_ADD:
+    return {
+        ...state,
+        ProductData: [...state.ProductData, payload], 
+    }
+
+    case PRODUCT_ONE:
+        return{
+            ...state,
+            ProductOne : payload
+        }
+
+        case DELETE_MULTYPAL:
+            return {
+              ...state,
+              ProductData: payload,
+            }
+
+    default:
         return state;
     }
     

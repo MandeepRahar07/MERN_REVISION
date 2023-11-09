@@ -1,7 +1,5 @@
 CI/cD
-
 continous Interation and Deployment
-
 Masai update
  for any update , go down for some min and back then again
 

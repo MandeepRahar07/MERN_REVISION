@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { LOG_IN, PRODUCT_DATA, SING_UP, USER_DATA } from './actiontype';
-import Login from '../Login/Login';
+import { LOG_IN, PRODUCT_DATA, PRODUCT_EDIT, SING_UP, USER_DATA ,PRODUCT_ONE, DELETE_MULTYPAL} from './actiontype';
+
 
 export const SingupPost = (payload)=> async(dispatch)=>{
        try{
@@ -47,4 +47,61 @@ export const ProductGetRequest = () =>async(dispatch)=>{
        console.log(err);
    }
 }
+
+export const Productadd = (payload) =>async(dispatch)=>{
+    try{
+     const res = await axios.post(`http://localhost:3000/product`,payload)
+     dispatch({
+         type : PRODUCT_EDIT,
+         payload : res.data
+    })
+    }catch(err){
+        console.log(err);
+    }
+ }
+
+ export const Productonedetail = (id) =>async(dispatch)=>{
+    try{
+     const res = await axios.get(`http://localhost:3000/product/${id}`)
+     dispatch({
+         type : PRODUCT_ONE,
+         payload : res.data
+    })
+    console.log(res.data)
+    }catch(err){
+        console.log(err);
+    }
+ }
+
+
+ export const Productput = (id,payload) =>async(dispatch)=>{
+    try{
+     const res = await axios.put(`http://localhost:3000/product/${id}`,payload)
+     dispatch({
+         type : PRODUCT_ONE,
+         payload : res.data
+    })
+    console.log(res.data)
+    }catch(err){
+        console.log(err);
+    }
+ }
+
+
+
+ export const Productdelete  = (productIds) => async (dispatch) => {
+   try {
+     const res = await axios.delete(`http://localhost:3000/product`, {
+       data: { productIds }
+     });
+     dispatch({
+       type: DELETE_MULTYPAL, // Make sure you have the correct action type defined
+       payload: res.data
+     });
+     console.log(res.data);
+   } catch (err) {
+     console.log(err);
+   }
+ };
+ 
 

@@ -71,7 +71,7 @@ export const PutProductdata = (id, payload) => async (dispatch) => {
     }
   };
   
-
+ 
   export const DeleteProduct = (id) => async (dispatch) => {
     try {
       const res = await axios.delete(`http://localhost:3000/mandeep/${id}`);

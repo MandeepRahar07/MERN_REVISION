@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { userdataget, SingupPost, Currentuser } from '../Redux/actions';
-import { useEffect } from 'react';
-
+import { userdataget, Currentuser } from '../Redux/actions';
+import { Box, Input, Button, FormControl, FormLabel } from '@chakra-ui/react';
 function Login() {
   const [formdata, setformdata] = useState({
     email: '',
@@ -23,7 +22,7 @@ function Login() {
 
   useEffect(() => {
     dispatch(userdataget());
-  }, []);
+  }, [dispatch]);
 
   const handlesubmit = (e) => {
     e.preventDefault();
@@ -32,39 +31,54 @@ function Login() {
       email: formdata.email,
       password: formdata.password,
     };
-   const data = userdata.find((e)=> e.email === payload.email && e.password === payload.password );
-  //  console.log(data);
+    const data = userdata.find(
+      (e) => e.email === payload.email && e.password === payload.password
+    );
+    //  console.log(data);
     // Call the login action
-    if(data){
-      dispatch(Currentuser(data))
-      alert("o ble ble.... login ho gya")
+    if (data) {
+      dispatch(Currentuser(data));
+      alert('o ble ble.... login ho gya');
     }
-    if(!data){
-      alert("dang t bhar le email password bc");
+    if (!data) {
+      alert('dang t bhar le email password bc');
     }
-  }
+  };
+
+  
 
   return (
-    <div>
-      Login
-      <form action="" onSubmit={handlesubmit}>
-        Login
-        <input
-          type="text"
-          name="email"
-          value={formdata.email}
-          onChange={handlechange}
-        />
-        Password
-        <input
-          type="password"
-          name="password"
-          value={formdata.password}
-          onChange={handlechange}
-        />
-        <button type="submit">Submit</button>
+    <Box maxW="md" mx="auto">
+      <form onSubmit={handlesubmit}>
+        <FormControl>
+          <FormLabel>Email</FormLabel>
+          <Input
+            type="text"
+            name="email"
+            value={formdata.email}
+            onChange={handlechange}
+          />
+        </FormControl>
+
+        <FormControl mt={4}>
+          <FormLabel>Password</FormLabel>
+          <Input
+            type="password"
+            name="password"
+            value={formdata.password}
+            onChange={handlechange}
+          />
+        </FormControl>
+
+        <Button
+          mt={4}
+          colorScheme="teal"
+          type="submit"
+        >
+          Submit
+        </Button>
       </form>
-    </div>
+    </Box>
   );
 }
 

@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux'; // Assuming you are using Redux
-import { SingupPost } from '../Redux/actions';
 
+import {
+  Box,
+  Input,
+  Button,
+  FormControl,
+  FormLabel,
+} from '@chakra-ui/react';
+import { SingupPost } from '../Redux/actions';
 
 function SignupD() {
   const [UserData, setUserData] = useState({
@@ -13,7 +20,7 @@ function SignupD() {
   });
 
   const dispatch = useDispatch();
-   
+
   const handlechange = (e) => {
     const { name, value } = e.target;
     setUserData({
@@ -25,50 +32,66 @@ function SignupD() {
   const handlesubmit = (e) => {
     e.preventDefault();
     dispatch(SingupPost(UserData));
-  }
+  };
 
   return (
-    <div>
-      Signup
+    <Box maxW="md" mx="auto">
       <form onSubmit={handlesubmit}>
-        <input
-          type="text"
-          name="name"
-          value={UserData.name}
-          onChange={handlechange}
-        />
+        <FormControl>
+          <FormLabel>Name</FormLabel>
+          <Input
+            type="text"
+            name="name"
+            value={UserData.name}
+            onChange={handlechange}
+          />
+        </FormControl>
 
-        <input
-          type="text"
-          name="email"
-          value={UserData.email}
-          onChange={handlechange}
-        />
+        <FormControl mt={4}>
+          <FormLabel>Email</FormLabel>
+          <Input
+            type="text"
+            name="email"
+            value={UserData.email}
+            onChange={handlechange}
+          />
+        </FormControl>
 
-        <input
-          type="password"
-          name="password"
-          value={UserData.password}
-          onChange={handlechange}
-        />
+        <FormControl mt={4}>
+          <FormLabel>Password</FormLabel>
+          <Input
+            type="password"
+            name="password"
+            value={UserData.password}
+            onChange={handlechange}
+          />
+        </FormControl>
 
-        <input
-          type="text"
-          name="phoneNumber"
-          value={UserData.phoneNumber}
-          onChange={handlechange}
-        />
+        <FormControl mt={4}>
+          <FormLabel>Phone Number</FormLabel>
+          <Input
+            type="text"
+            name="phoneNumber"
+            value={UserData.phoneNumber}
+            onChange={handlechange}
+          />
+        </FormControl>
 
-        <input
-          type="text"
-          name="city"
-          value={UserData.city}
-          onChange={handlechange}
-        />
+        <FormControl mt={4}>
+          <FormLabel>City</FormLabel>
+          <Input
+            type="text"
+            name="city"
+            value={UserData.city}
+            onChange={handlechange}
+          />
+        </FormControl>
 
-        <button>Submit</button>
+        <Button mt={4} colorScheme="teal" type="submit">
+          Submit
+        </Button>
       </form>
-    </div>
+    </Box>
   );
 }
 
