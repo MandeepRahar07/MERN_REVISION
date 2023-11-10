@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { LOG_IN, PRODUCT_DATA, PRODUCT_EDIT, SING_UP, USER_DATA ,PRODUCT_ONE, DELETE_MULTYPAL} from './actiontype';
+import { LOG_IN, PRODUCT_DATA, PRODUCT_EDIT, SING_UP, USER_DATA ,PRODUCT_ONE, DELETE_MULTYPAL, RANGE_HIGH_TO_LOW, RANGE_LOW_TO_HIGH} from './actiontype';
 
 
 export const SingupPost = (payload)=> async(dispatch)=>{
@@ -36,17 +36,33 @@ export const Currentuser = (payload)=>(dispatch)=>{
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-export const ProductGetRequest = () =>async(dispatch)=>{
-   try{
-    const res = await axios.get(`http://localhost:3000/product`)
+export const ProductGetRequest = (minPrice, maxPrice,red,white,black,blue,green) => async (dispatch) => {
+  try {
+
+    console.log(minPrice);
+    console.log(minPrice);
+    const lowToHighRange = minPrice ? `&price_gte=${minPrice}` : "";
+    const highToLowRange = maxPrice ? `&price_lte=${maxPrice}` : "";
+    const filerbycolorred = red ? `&colorred=${red}` : "";
+    const filerbycolorwhite = white ? `&colorwhite=${white}` : "";
+    const filerbycolorblack = black ? `&colorblack=${black}` : "";
+    const filerbycolorblue = blue ? `&colorblue=${blue}` : "";
+    const filerbycolorgreen = green ? `&colorgreen=${green}` : "";
+
+    const res = await axios.get(
+      `http://localhost:3000/product?${highToLowRange}${lowToHighRange}${filerbycolorred}${filerbycolorwhite}${filerbycolorblack}${filerbycolorgreen}${filerbycolorblue}`
+    );
     dispatch({
-        type : PRODUCT_DATA,
-        payload : res.data
-   })
-   }catch(err){
-       console.log(err);
-   }
-}
+      type: PRODUCT_DATA,
+      payload: res.data,
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+
+
 
 export const Productadd = (payload) =>async(dispatch)=>{
     try{

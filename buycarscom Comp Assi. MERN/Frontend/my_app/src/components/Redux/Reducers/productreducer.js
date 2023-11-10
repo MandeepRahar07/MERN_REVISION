@@ -38,3 +38,13 @@ function Productreducer(state = intialValue, {type, payload}) {
 }
 
 export default Productreducer;
+
+// case DELETE_MULTYPAL:
+//     const productIdsToDelete = payload;
+//     const updatedProductData = state.ProductData.filter(
+//       (product) => !productIdsToDelete.includes(product.id)
+//     );
+//     return {
+//       ...state,
+//       ProductData: updatedProductData,
+//     }
