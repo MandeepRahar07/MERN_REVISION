@@ -1,0 +1,57 @@
+                   database
+                   sql                         NO-sql 
+                                             
+         --mysql --postgress --mariaDB           document    graph       vector
+        in sql with write for query              mongodb     cassendra   pinecone
+        if you know mysql , then you can learn 
+        easly other things
+
+
+-- mongodb allow to  you follow perticale shcema  {name : mandeep}, {price : 1000} we cant add these to
+ 
+ sql --
+ create database => create database rahar;
+ delete database => drop database rahar;
+ create collections => colllections == tables;
+
+ create table custmor (
+  name varchar(50),
+  email varchar(80),
+  age int ,
+  phone_number bigint
+);
+
+insert into customer(name,email,age,phone_number)
+values ("mandeep", "mandeep@gamil.com", 40, 1234567890);
+
+select * from customers;
+* means show me the all tables
+
+create database mandy;
+use mandy;
+create table rahar (
+id int primary key auto_increment, -- all in one unique not nullll
+name varchar(50),
+email varchar(100) unique not null -- 2  constrains
+);
+
+insert into rahar( name, email)
+value ("mandeep", "mdndeep@gmail.com" ),
+("sandeep", "aakdf@gmail"),
+("dandeep", "pakdf@gmail"),
+("fandeep", "fakdf@gmail"),
+("jandeep", "hakdf@gmail");
+
+select * from rahar;
+-- select name,email from rahar where name = "mandeep";
+-- select name,email from rahar where name like "%deep%"; -- any char can be before and after this tha why we use % before and after
+
+UPDATE rahar
+SET name = 'gharpar'
+WHERE name = 1;
+
+delete from rahar where id = 11;
+select * from rahar order by name asc; -- asc/desc
+
+INTRO => https://interviewhandbook.notion.site/1-1-Introduction-to-Tables-and-Databases-a87fcb8566ab4e1a87e90ea2cabfdf44
+CRUD NOES -> https://interviewhandbook.notion.site/1-2-SQL-CRUD-c63819380a3d40adbbe9659c32611e83

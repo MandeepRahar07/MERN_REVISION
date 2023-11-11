@@ -1,0 +1,37 @@
+-- Create the Students table
+CREATE TABLE Students (
+    Name VARCHAR(50),
+    Email VARCHAR(50),
+    ID INT ,
+    Score FLOAT,
+    Place VARCHAR(100)
+);
+
+-- Insert 10 rows into the Students table
+INSERT INTO Students (Name, Email, ID, Score, Place)
+VALUES
+    ('mandeep', 'mandeep@gmail.com', 1, 85.5, 'Delhi'),
+    -- Add 9 more rows with your desired data
+    ('John', 'john@gmail.com', 2, 75.0, 'New York'),
+    ('Alice', 'alice@gmail.com', 3, 92.3, 'London'),
+    ('Bob', 'bob@gmail.com', 4, 88.7, 'Paris'),
+    ('Emily', 'emily@gmail.com', 5, 91.2, 'Tokyo'),
+    ('David', 'david@gmail.com', 6, 78.9, 'Berlin'),
+    ('Sara', 'sara@gmail.com', 7, 87.4, 'Sydney'),
+    ('Mike', 'mike@gmail.com', 8, 69.8, 'Toronto'),
+    ('Rachel', 'rachel@gmail.com', 9, 94.6, 'Singapore'),
+    ('Chris', 'chris@gmail.com', 10, 82.1, 'Dubai');
+
+-Aggregations 
+-- count how many students are these in the table
+-- 1 COUNT AGGREGAE MATHOD
+select COUNT(ID) from students;
+select * from students;
+-- Avarage score of the students
+select AVG(SCORE) as avrage_score FROM students;
+
+-- SUM MIN MAX
+select SUM(score) as total_sum from students;
+select MIN(score) as min_number from students;
+select MAX(score) as max_number from students;
+

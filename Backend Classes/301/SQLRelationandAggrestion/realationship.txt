@@ -1,0 +1,100 @@
+Create table Courses (
+    id int primary key,
+    name varchar(10)""
+)
+insrt info Courses (id name)
+values 
+(1, "JS101")
+(2, "WEB101")
+(3, "JS101");
+
+insrt INFO Students (Name, Email, ID, Score ,Place, CoursesID)
+value 
+ ('mandeep', 'mandeep@gmail.com', 1, 85.5, 'Delhi', 1),
+
+ select * from Students;
+JOIN Courses ON 
+Students.courseID = Courses.id;
+
+----------------------------------
+-- Create the Courses table
+drop database relations;
+create database relations2;
+use relations2;
+CREATE TABLE Courses (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+-- Insert data into the Courses table
+INSERT INTO Courses (id, name)
+VALUES 
+    (1, 'JS101'),
+    (2, 'WEB101'),
+    (3, 'JS101');
+
+-- Create the Students table with a foreign key reference to Courses
+CREATE TABLE Students (
+    Name VARCHAR(50),
+    Email VARCHAR(50),
+    ID INT,
+    Score FLOAT,
+    Place VARCHAR(100),
+    CoursesID INT,
+    FOREIGN KEY (CoursesID) REFERENCES Courses(ID)
+);
+
+-- Insert 10 rows into the Students table
+INSERT INTO Students (Name, Email, ID, Score, Place, CoursesID)
+VALUES
+    ('mandeep', 'mandeep@gmail.com', 1, 85.5, 'Delhi', 1),
+    -- Add 9 more rows with your desired data
+    ('John', 'john@gmail.com', 2, 75.0, 'New York', 2),
+    ('Alice', 'alice@gmail.com', 3, 92.3, 'London', 1),
+    ('Bob', 'bob@gmail.com', 4, 88.7, 'Paris', 2),
+    ('Emily', 'emily@gmail.com', 5, 91.2, 'Tokyo', 2),
+    ('David', 'david@gmail.com', 6, 78.9, 'Berlin', 1),
+    ('Sara', 'sara@gmail.com', 7, 87.4, 'Sydney', 2),
+    ('Mike', 'mike@gmail.com', 8, 69.8, 'Toronto', 2),
+    ('Rachel', 'rachel@gmail.com', 9, 94.6, 'Singapore', 1),
+    ('Chris', 'chris@gmail.com', 10, 82.1, 'Dubai', 2);
+    
+    
+    INSERT INTO Students (Name, Email, ID, Score, Place)
+VALUES
+('sandeep', 'chris@gmail.com', 11, 82.1, 'bhiwani');
+
+
+select * from Students;
+select * from Courses;
+
+-- JOIN/INNERJOIN 
+ select * from Students
+JOIN Courses ON 
+Students.CoursesID = Courses.id;
+
+ select * from Students
+ inner JOIN Courses ON 
+Students.CoursesID = Courses.id;
+
+-- left join
+ select * from Students
+ LEFT JOIN Courses ON 
+Students.CoursesID = Courses.id;
+
+-- RIGHT JOIN
+ select * from Students
+ RIGHT JOIN Courses ON 
+Students.CoursesID = Courses.id;
+
+-- LEFT MEANS WHATEVER IN THE LEFT SIDE OF THE JOIN IT WILL SHOW, IF USE RIGHT SIDE THEN IT WILL SHOW WHATEVER IN THE RIGHT SIDE
+
+-- AVERAGE SCORE OF THE STUDENT IN EACH COURSE
+-- uniwue courese 
+SELECT courses.name, AVG(Score) as AvgScore FROM Students
+ join courses
+ On students.coursesID = courses.id
+ GROUP BY Students.CoursesID;
+
+-- self join learn about 
+
