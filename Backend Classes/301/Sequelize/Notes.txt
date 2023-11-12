@@ -1,0 +1,7 @@
+Sequelize 
+SQL ORM for Node
+ORM => object relation   its convert sql query in simple object 
+
+js dont understand SQL so all thing in the string 
+mysql = uses callback
+mysql2 = uses primise
