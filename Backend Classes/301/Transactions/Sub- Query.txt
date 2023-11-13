@@ -1,0 +1,43 @@
+ (2, 'Alice', 60000.00, 2),
+    (3, 'Bob', 55000.00, 1),
+    (4, 'Charlie', 70000.00, 1),
+    (5, 'David', 52000.00, 2),
+    (6, 'Eva', 48000.00, 3),
+    (7, 'Frank', 75000.00, 2),
+    (8, 'Grace', 62000.00, 1),
+    (9, 'Henry', 58000.00, 3),
+    (10, 'Ivy', 67000.00, 2),
+    (11, 'Jack', 53000.00, 1);
+
+     -- find the those employees whose sallary is >= the average sallry of the 
+    --  1. find the avg sallary of the employees
+   --   2 . find those employee whose sallary more the average 
+     
+        select avg(salary) from employees;
+    select * from employees where  salary>=57000;
+    
+    select * from employees where  salary>=(select avg(salary) from employees);
+
+
+-- Find employees with salary greater than or equal to max salary
+SELECT *
+FROM Employees
+WHERE salary >= (SELECT MAX(salary) FROM Employees);
+
+-- find 
+use subquery;
+ select AVG(salary) from employees where department_id = 1;
+select * from employees where  salary>=(select avg(salary) from employees where department_id = Employee_id);
+
+-- Find employees with salary greater than or equal to the average salary in their department
+SELECT E.*, D.department_name
+FROM Employees E
+JOIN Departments D ON E.department_id = D.department_id
+WHERE E.salary >= (SELECT AVG(salary) FROM Employees WHERE department_id = E.department_id);
+
+3) find hose employees whose sallary is >= avg sallary of their departments
+  1. find avg salary the departments
+  2 . find the employee who has more sal then avg 
+  (  mulity-row sub-query)
+  3. if i tell you the deparment_id can you calc the vg sal ?
+   select AVG(salary) from employee where department_id = 1;

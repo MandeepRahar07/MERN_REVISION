@@ -1,0 +1,30 @@
+Transactions => involve the exchange of something. It typically follows the ACID properties:
+
+ACID Properties:
+
+Atomicity:
+
+Definition: It implies "All or Nothing." All operations within a transaction are considered one atomic unit.
+Characteristics: The transaction is treated as a single, indivisible task.
+Example: If a transaction involves multiple steps, either all steps are completed successfully, or none are.
+Consistency:
+
+Definition: The constraints on data values should remain constant before and after the execution of the transaction.
+Example: If the total amount in Alice's and Bob's accounts is 100 before a transaction, it should be the same or adhere to specific constraints after the transaction (e.g., 70 in one account and 130 in the other).
+Isolation:
+
+Definition: Multiple transactions on the same database should not interfere with each other. The execution of one transaction is isolated from the operations of other transactions.
+Example: Transactions A and B are in progress concurrently, and the operations in A should not affect the outcome of B, and vice versa.
+Durability:
+
+Definition: Even after the completion of a transaction, changes made during the transaction should persist.
+Example: If a database is updated during a transaction, those updates should survive system failures or crashes.
+Additional Notes:
+
+Transactions involve a series of operations that are treated as a single, indivisible task.
+ACID properties ensure the reliability and integrity of database transactions.
+Consistency ensures that the data remains in a valid state throughout the transaction.
+Isolation prevents interference between concurrent transactions.
+Durability ensures that the changes made during the transaction persist even after completion.
+
+
