@@ -1,0 +1,21 @@
+ the four pillars
+ 1) abstraction
+             vehicle class
+             engine wheels are common in these
+              car bus tank
+ 2) inheritance 
+             mamals => one parents class 
+             1. cow
+             2. dog
+             3. human
+
+3) POLYMORPHISM
+       1. dog
+       2. BIRD
+       BOTH CAN MOVEMENT()
+       NAAM SAME KAAM ALAG
+
+ 4) ENCAPSULATION
+           MASAI DATABASE
+           
+           GET STUDENT CODE           SET STUDENT CODE

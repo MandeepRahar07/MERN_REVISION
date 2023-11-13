@@ -1,0 +1,30 @@
+    1) Programming
+
+    1. imperative Programming    2 declarative Programming
+
+    interface PersonType{
+    name : string;
+    age : number;
+}
+
+// when create multipal classes wih same sturcture
+// only use with object interface
+const p: PersonType ={
+    name : "",
+    age : 20
+}
+
+class Person implements PersonType {
+    name: string;
+    gender: GenderType;
+    
+    constructor (name :string, gender: GenderType,age: number){
+        this.name = name;
+        this.gender = gender;
+        
+    }
+    isMarriageble(){
+        if(this.age < 21) return false;
+        return true
+    }
+}
