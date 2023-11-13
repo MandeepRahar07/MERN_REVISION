@@ -1,0 +1,28 @@
+https://www.digitalocean.com/community/tutorials/typescript-new-project
+why just add some feature in javascript
+its not promming language its a superset on javascript 
+
+why typescript we are going learn =>
+
+function sum(a,b){
+    return a + b;
+}
+sum(2,3); 
+sum(ture, "ok") //run time error will come 
+//we cant  pass boolean and string
+// this behaivor are litle bit gatiya of javascript
+/// in main project these function are more complex
+// we not going to check what we passed in the parameter
+// only after the run the code we are able to what is the error in the code
+//.................//
+// stack owerflow
+// now its most popular language
+
+
+function sum(a:number,b:number){
+    return a + b;
+}
+sum(10,20);
+// sum(true, 20); // its show us an error autometic
+
+1) java why so popular bcz its so much flexible
