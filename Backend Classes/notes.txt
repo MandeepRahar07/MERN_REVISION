@@ -1,0 +1,70 @@
+const express = require("express");
+const {ProductModel} = require('./module/product.model');
+const {connection} = require('./config/db')
+const app = express();
+app.use(express.json());
+app.get("/", (req,res)=>{
+    res.send("home at here")
+})
+
+app.post("/productdataadd", async(req,res)=>{
+    const {name,price, category, comingsoon,stockavilable,imagelink} = req.body;
+   try{
+    const data = await ProductModel.create({
+        name,price, category, comingsoon,stockavilable,imagelink
+    })
+    res.send(data);
+   }catch(err){
+    console.log(err);
+   }
+})
+
+app.get("/productdata", async(req,res)=>{
+const {name, page, limit, _sort,_order,category,comingsoon,stockavilable} = req.query;
+let query = {};
+
+if(name){
+    query.name={$regex:name}
+}
+
+if(category){
+query.category = category;
+}
+
+if(comingsoon){
+    query.comingsoon = comingsoon
+}
+
+if(stockavilable){
+    query.stockavilable = stockavilable
+}
+
+// .............sorting.......... 
+
+let sortOption = {};
+
+if (_sort) {
+    if (_order === "asc" || _order === "desc") {
+        sortOption[_sort] = _order === "asc" ? 1 : -1;
+    }
+}
+
+let limitofproduct = parseInt(limit);
+const skip = (parseInt(page-1) * (parseInt(limit)));
+
+const data =await ProductModel.find(query).sort(sortOption).limit(limitofproduct).skip(skip);
+res.send(data);
+})
+
+
+
+app.listen(8080, async()=>{
+    try{
+        connection;
+        console.log("db connected")
+
+    }catch(err){
+        console.log("error" + err);
+    }
+    console.log(" server 8080 running ")
+})

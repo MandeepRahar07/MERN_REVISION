@@ -2,9 +2,10 @@
         //    > one class one responsibility
 // O => open close principle
         // 
-// L=> liskov substitution PRinciple
+// L=> liscov substitution PRinciple
+// when ever a child class, you should be able to replace the child with the parent class
 // I +> interface  Segrigation principle
-// D=>
+// D=> dependancy inversion principle
 
 
 
@@ -105,3 +106,84 @@ const rec = new rectangle(5,5);
 rec.setwidth(6);
 console.log(rec.area()); //30
 // if you can replace the child class with the parend class you should not make that inheritance
+
+// I +> interface  Segrigation principle
+ interface Ientity{
+     level : number;
+     attack : number;
+    //  levelup?: Function;
+    //  followplayer ?: Function;
+ }
+ // we also can extends interface also
+ interface Iplayer extends Ientity{
+    levelup(): void;
+ }
+
+ interface IEnemy extends Ientity{
+followplayer():void;
+ }
+ class player11 implements Ientity{
+    level : number;
+    attack : number;
+    constructor(){
+        this.level = 1;
+        this.attack = 10;
+    }
+    levelup(){
+
+    }
+ }
+ class Enemies implements Ientity{
+    level : number;
+    attack : number;
+    constructor(){
+        this.level = 1;
+        this.attack = 10;
+    }
+    followplayer(){
+
+    }
+ }
+
+ // D=> dependancy inversion principle
+ // higher level modules shouldnt depend on lover 
+// lover level modules they should depend on abstractions) 
+ //http module => fetch data using this 
+ class Store{
+    product : number;
+    payment : rezopay
+    constructor(){
+        this.product = 100;
+        this.payment = new rezopay();
+    }
+ }
+
+ class razorpaymanage {
+    razopay : Rezopay;
+    constructor(){
+     this.razopay = new Rezopay();
+    }
+    pay(rs : number){
+        this.razopay.paywihtus(rs);
+    }
+ }
+// stripe(global)
+// rezopay (india)
+class Rezopay{
+    constructor(){
+    }
+    paywihtus(rs: number){
+        console.log(rs);
+    }
+}
+
+class stripe{
+    constructor(){
+
+    }
+    paywithease (usd : number){
+        console.log(usd);
+    }
+}
+
+   
