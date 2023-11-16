@@ -64,8 +64,7 @@ class swordman extends player1{
 class rectangle{
     w : number;
     h : number
-    constructor(w : number,
-        h : number)
+    constructor(w : number,h : number)
         {
             this.w = w;
             this.h = h 
@@ -73,7 +72,7 @@ class rectangle{
          setwidth(w : number){
             this.w =w;
          } 
-
+ 
          sethight(h : number){
             this.h =h;
          } 
@@ -82,6 +81,8 @@ class rectangle{
             return  this.w *this.h
         }
 }     
+
+
 
 class square extends rectangle{
     constructor(w : number){
@@ -149,15 +150,15 @@ followplayer():void;
  // higher level modules shouldnt depend on lover 
 // lover level modules they should depend on abstractions) 
  //http module => fetch data using this 
- class Store{
-    product : number;
-    payment : rezopay
-    constructor(){
-        this.product = 100;
-        this.payment = new rezopay();
-    }
- }
-
+//  class Store{
+//     product : number;
+//     payment : rezopay
+//     constructor(){
+//         this.product = 100;
+//         this.payment = new rezopay();
+//     }
+//  }
+/oooooooo/
  class razorpaymanage {
     razopay : Rezopay;
     constructor(){
