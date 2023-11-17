@@ -158,7 +158,8 @@ followplayer():void;
 //         this.payment = new rezopay();
 //     }
 //  }
-/oooooooo/
+// /oooooooo/
+// lllllllllllll
  class razorpaymanage {
     razopay : Rezopay;
     constructor(){
