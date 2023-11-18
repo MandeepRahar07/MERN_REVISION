@@ -159,7 +159,7 @@ followplayer():void;
 //     }
 //  }
 // /oooooooo/
-// lllllllllllll
+// llllllllllllluuuuuuuuuuuuuuu
  class razorpaymanage {
     razopay : Rezopay;
     constructor(){
