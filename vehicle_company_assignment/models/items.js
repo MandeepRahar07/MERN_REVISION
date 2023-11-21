@@ -9,7 +9,6 @@ const ItemsShcema = mongoose.Schema({
         type : String,
         required : true 
     }
-
 })
 
 const ItemModels = mongoose.model("item", ItemsShcema);
