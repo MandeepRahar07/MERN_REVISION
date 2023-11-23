@@ -14,12 +14,6 @@ router.post('/custmerpost', async(req,res)=>{
             name, 
             city
         })
-        // const data = new CustmerModels({
-        //     name, 
-        //     city
-        // });
-        // await data.save();
-       
         res.send( data);
     }catch(err){
         res.send({msg : "post not done"})

@@ -11,24 +11,9 @@
       "id": 2
     },
     {
-      "title": "Build web pages with HTML",
-      "description": "HTML is the foundation of every web page. Learn how to use it to create well-structured and accessible web pages.",
+      "title": "mandeep ",
+      "description": "desreeedfggh ",
       "id": 3
-    },
-    {
-      "title": "Take your JavaScript skills to the next level",
-      "description": "Once you've mastered the fundamentals of JavaScript, it's time to dive deeper into the language. Learn advanced concepts and techniques to build even more powerful web applications.",
-      "id": 4
-    },
-    {
-      "title": "Develop dynamic user interfaces with React",
-      "description": "React is a popular JavaScript library for building dynamic and interactive user interfaces. Learn how to use it to create dynamic web applications that respond to user input.",
-      "id": 5
-    },
-    {
-      "title": "Build scalable server-side applications with Node.js",
-      "description": "Node.js is a powerful server-side JavaScript runtime that allows you to build scalable and performant web applications. Learn how to use it to build robust server-side applications.",
-      "id": 6
     }
   ]
 }

@@ -12,7 +12,7 @@ const MainRoutes = () => {
         </Route>
         <Route path= '/addnote' element = {<AddNote/>}/>
       </Routes>
-{/* Add routes here for "/" for "ViewNotes" and "/addnote" for "AddNote" */}
+
      
     </div>
   );
