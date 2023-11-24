@@ -3,7 +3,7 @@ import axios from 'axios'
 import React from 'react'
 import { ADD_DATA, DELETE_DATA, EDIT_DATA, GET_DATA } from './actionType'
 
-const URL = `http://localhost:3000/notes`
+const URL = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/notes`
 export const fetchdata = ()=>async(dispatch)=>{
     try{
          const res = await axios.get(URL)
@@ -32,7 +32,7 @@ export const adddata = (payload)=>async(dispatch)=>{
 export const Deletedata = (id)=>async(dispatch)=>{
     console.log(id);
     try{
-        const res = await axios.delete(`http://localhost:3000/notes/${id}`);
+        const res = await axios.delete(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/notes/${id}`);
         dispatch({
             type : DELETE_DATA,
             payload :{id}  
@@ -45,7 +45,7 @@ export const Deletedata = (id)=>async(dispatch)=>{
 
 export const handleedit = (id, payload) => async (dispatch) => {
     try {
-      const res = await axios.patch(`http://localhost:3000/notes/${id}`, payload);
+      const res = await axios.patch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/notes/${id}`, payload);
       dispatch({
         type: EDIT_DATA, // Assuming you have a new action type for edit
         payload: { id, ...payload }, // Include id in the payload to identify the note
