@@ -1,7 +1,7 @@
 //Write the ActionCreator functions here
 import axios from 'axios'
 import React from 'react'
-import { ADD_DATA, DELETE_DATA, GET_DATA } from './actionType'
+import { ADD_DATA, DELETE_DATA, EDIT_DATA, GET_DATA } from './actionType'
 
 const URL = `http://localhost:3000/notes`
 export const fetchdata = ()=>async(dispatch)=>{
@@ -43,12 +43,14 @@ export const Deletedata = (id)=>async(dispatch)=>{
 }
 
 
-export const handleedit = (id,payload)=>async(dispatch)=>{
-    try{
-         const res = await axios.patch(`http://localhost:3000/notes/${id}`,payload)
-         
-    }catch(err){
-        console.log(err);
+export const handleedit = (id, payload) => async (dispatch) => {
+    try {
+      const res = await axios.patch(`http://localhost:3000/notes/${id}`, payload);
+      dispatch({
+        type: EDIT_DATA, // Assuming you have a new action type for edit
+        payload: { id, ...payload }, // Include id in the payload to identify the note
+      });
+    } catch (err) {
+      console.log(err);
     }
-}
-
+  };

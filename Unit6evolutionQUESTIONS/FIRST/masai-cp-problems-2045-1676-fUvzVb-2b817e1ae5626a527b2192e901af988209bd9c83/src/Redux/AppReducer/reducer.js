@@ -1,6 +1,7 @@
 // NOTE: DO NOT MODIFY the intial state structure in this file.
 
-import { ADD_DATA, DELETE_DATA, GET_DATA } from "./actionType";
+
+import { ADD_DATA, DELETE_DATA, EDIT_DATA, GET_DATA } from "./actionType";
 
 const initialState = {
   notes: [], 
@@ -27,7 +28,15 @@ const reducer = (state = initialState, { type, payload }) => {
     notes: state.notes.filter(note => note.id !== payload.id)
   };
 
-     
+  case EDIT_DATA:
+    return {
+      ...state,
+      notes: state.notes.map((note) =>
+        note.id === payload.id ? { ...note, ...payload } : note
+      ),
+    };
+
+
       default :
       return state;
   }

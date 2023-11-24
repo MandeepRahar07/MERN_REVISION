@@ -2,80 +2,66 @@ import React from "react";
 import {useState} from 'react';
 import { useDispatch } from "react-redux";
 import { Deletedata, fetchdata,handleedit } from "../Redux/AppReducer/action";
-export const NoteCard = ({e}) => {
+
+export const NoteCard = ({ e }) => {
   const [Data, setData] = useState({
-       title : "",
-       description: ""
-  })
-  const[toggle, settoggle] = useState(true);
-   
-   const dispatch = useDispatch();
-  const handledlete = (id)=>{
+    title: e.title,
+    description: e.description,
+  });
+  const [toggle, setToggle] = useState(true);
+
+  const dispatch = useDispatch();
+
+  const handleDelete = (id) => {
     dispatch(Deletedata(id));
     dispatch(fetchdata());
-  }
+  };
 
-  const handlechange= (e)=>{
+  const handleChange = (e) => {
     setData({
       ...Data,
-      [e.target.name] : e.target.value
-    })
-  
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  const handlesubmit = (id)=>{
-//  e.preventDefault();
-    dispatch(handleedit(Data,id));
-  }
+  const handleSubmit = (id) => {
+    dispatch(handleedit(id, Data)); // Pass id and payload to handleedit
+    setToggle(true); // Reset toggle to true after submitting the form
+  };
 
-
-  
   return (
     <div data-testid="note-card">
-      {/* Add title and description of the note in h3 and p tag respectively */}
       <h3>{e.title}</h3>
-      <p>{e.description}</p>      
-      <button onClick={() => handledlete(e.id)}>
-        Delete
+      <p>{e.description}</p>
+      <button onClick={() => handleDelete(e.id)}>Delete</button>
+      <button onClick={() => setToggle(!toggle)}>
+        {toggle ? "Edit" : "Cancel Edit"}
       </button>
-      {/* The button should be changed to Edit or Cancel Edit */}
-      <button onClick = {()=> settoggle(!toggle)}>
-        {
-         toggle ? "Edit" : "Cancel Edit"
-        }
-      </button>
-      {/* The below div should be visible only when some click on Edit and after submitting the form the data should be updated on DOM as well as redux store.
-      1. Make a patch request the update
-      2. After making patch request update the all the notes in the redux store by making get request*/}
-     {
-      toggle ? "" : 
+      {toggle ? (
+        ""
+      ) : (
         <div data-testid="edit-note">
-          <form onSubmit={handlesubmit(e.id)}>
+          <form onSubmit={() => handleSubmit(e.id)}>
             <label>Title</label>
-            <input           
+            <input
               data-testid="title-input"
               placeholder="Enter Title"
-              name = "title"
-              value = {Data.title}   
-              onChange={handlechange}     
-              ></input>
+              name="title"
+              value={Data.title}
+              onChange={handleChange}
+            ></input>
             <label>Description</label>
             <input
-              placeholder="Enter Description"            
-              data-testid="description-input" 
-              name = "description"
-              value = {Data.description}   
-              onChange={handlechange}   
-              ></input>
-            <input type="submit"></input>
+              placeholder="Enter Description"
+              data-testid="description-input"
+              name="description"
+              value={Data.description}
+              onChange={handleChange}
+            ></input>
+            <input type="submit" value="Submit"></input>
           </form>
-        </div> 
-}
-
+        </div>
+      )}
     </div>
   );
 };
-
-
-
-
