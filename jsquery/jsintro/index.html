@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<body>
+    
+</body>
+   
+   <div id="mandy">
+    <h1>heloo jj</h1>
+    <p>heloo byee </p>
+   </div>
+<div id="box">
+    <h2>box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iusto aut cum voluptas voluptates dolore commodi nemo deleniti eveniet, b</p>
+</div>
+<div id="box1">
+    <h2>box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iusto aut cum voluptas voluptates dolore commodi nemo deleniti eveniet, b</p>
+</div>
+<div>
+    <form action="" id="form">
+        <label for=""> name
+            <input  id="f1">
+        </label>
+        <label for=""> class
+            <input id="f2" type="text">
+        </label>
+        <select id="f3">
+            <option value="name">name</option>
+            <option value="india">india</option>
+            <option value="muski">muski</option>
+        </select>
+        <button id="submit" > Submit</button>
+        <input type="submit">
+    </form>
+    <div id="slect"></div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        //selector //method
+      //target Dom Element //what work 
+      //css
+       var a =  $('#mandy p').css('color', 'red');
+    //mouse event
+        $('#box').click(function(){
+            $('#box').css("background", 'green')
+        })
+
+        $('#box').dblclick(function(){
+            $('#box').css("background", 'red');
+        });
+
+        $('#box').contextmenu(function(){
+            $('#box').css("background", 'red');
+            return false; 
+        });
+
+        $('#box').mouseenter(function(){
+            $('#box').css("background", 'red');
+        });
+
+        $('#box').mouseleave(function(){
+            $('#box').css("background", 'blue');
+        });
+
+ //keypress
+//  $('body').keypress(function(){
+//             $(this).css("background", 'orange')
+//         })
+
+   //keyup
+        // $('body').keyup(function(){
+        //     $(this).css("background", 'red')
+        // })
+        
+     //keydown
+    //    $('body').keydown(function(){
+    //         $(this).css("background", 'white')
+    //     })
+
+   //form event
+    //focus
+    $('#f1, #f2, #f3').focus(function(){
+        $(this).css('background', 'pink');
+    })
+
+    //blur
+    $('#f1, #f2, #f3').blur(function(){
+        $(this).css('background', '');
+    })
+
+    //change
+    $('#f1, #f2, #f3').blur(function(){
+        $(this).css('background', '');
+    })
+
+    //select
+    $('#f1, #f2, #f3').select(function(){
+        $(this).css('background', 'yellow');
+    })
+ //change
+    $('#f3').change(function(){
+        $(this).css('background', 'green');
+        var a = $(this).val();
+        $('#slect').html(a);
+    })
+    $('#f3, #f1,#f2').change(function(){
+        $(this).css('background', 'green');
+        var a = $(this).val();
+        $('#slect').html(a);
+    })
+ 
+    //vlue
+    
+    //submit
+    $('#f3').change(function(){
+        $(this).css('background', 'green');
+        var a = $(this).val();
+        $('#slect').html(a);
+    })
+ 
+    //submit and val
+    $('#form').submit(function(){
+        var a = $('#f1').text();
+        var b = $('#f2').text();
+        var c = $('#f3').text();
+         alert("heloo" + a + b + c);
+    })
+   
+    //window event
+      // scroll kanne par event
+      $('#bbbooxx').scroll(function(){
+        console.log("scrolling")
+    })
+      // reszie => resize of window
+      $('window').resize(function(){
+        console.log("resizeee")
+    })
+    })
+</script>
+</html>

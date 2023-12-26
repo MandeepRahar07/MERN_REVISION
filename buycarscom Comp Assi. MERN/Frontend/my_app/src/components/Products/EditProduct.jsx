@@ -12,8 +12,11 @@ import {
 } from '@chakra-ui/react';
 
 function EditProduct() {
+
   const Navigate = useNavigate();
   const { id } = useParams();
+  
+
   const oneproduct = useSelector((state) => state.Product.ProductOne);
   console.log(oneproduct);
   const Dispatch = useDispatch();
