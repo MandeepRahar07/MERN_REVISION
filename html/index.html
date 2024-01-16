@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Apply a float to the left */
+    .float-left {
+      float: left;
+      margin-right: 20px; /* Add some margin for spacing */
+    }
+
+    /* Apply a float to the right */
+    .float-right {
+      float: right;
+      margin-left: 20px; /* Add some margin for spacing */
+    }
+
+    /* Clear the float to prevent content from wrapping around */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="float-left">
+    <img src="https://cdn1.byjus.com/wp-content/uploads/2021/04/ChemistryArtboard-1-copy-3-8-700x373.png" alt="Left Floated Image">
+    <p>This content is floated to the left.</p>
+  </div>
+
+  <div class="float-right">
+    <img src="https://cdn1.byjus.com/wp-content/uploads/2021/04/ChemistryArtboard-1-copy-3-8-700x373.png" alt="Right Floated Image">
+    <p>This content is floated to the right.</p>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <p>This is regular content that appears below the floated elements.</p>
+  <label for="browser">Choose a browser:</label>
+  <input list="browsers" id="browser" name="browser" placeholder="Type or select a browser">
+  
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+    <option value="Edge">
+    <option value="Opera">
+  </datalist>
+  
+</body>
+</html>

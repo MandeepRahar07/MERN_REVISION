@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="games">
+        <h2>Games</h2>
+    
+        <div class="season-filter">
+          <label for="season-select">Select Season:</label>
+          <select id="season-select"></select>
+        </div>
+    
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+    
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+    
+        <button onclick="fetchAndRenderGames()">Fetch Games</button>
+    
+        <div id="game-list"></div>
+      </div>
+</body>
+<script src="game.js"></script>
+</html>
