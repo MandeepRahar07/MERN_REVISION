@@ -1,0 +1,50 @@
+{
+  "mandy": [
+    {
+      "id" : 1,
+      "name" : "mandeep",
+      "title" : "you can do evertything",
+      "age" : 12,
+      "cat" : "man"
+    },
+    {
+      "id" : 2,
+      "name" : "muska",
+      "title" : "you can do evertything",
+      "age" : 40,
+      "cat" : "women"
+    }
+  ],
+  "calender":[
+    {
+      
+        "name": "Tyrion Lannister",
+        "birthday": "12/02/1978"
+        
+    },
+    {
+      "name": "Cersei Lannister",
+      "birthday": "11/30/1975"
+      },
+      {
+      "name": "Daenerys Targaryen",
+      "birthday": "11/24/1991"
+      },
+      {
+        "name": "Jon Snow",
+        "birthday": "12/03/1989"
+        },
+        {
+        "name": "Sansa Stark",
+        "birthday": "08/15/1992"
+        },
+        {
+        "name": "Jorah Mormont",
+        "birthday": "12/16/1968"
+        },
+        {
+        "name": "Jaime Lannister",
+        "birthday": "12/06/1975"
+        }
+  ]
+}

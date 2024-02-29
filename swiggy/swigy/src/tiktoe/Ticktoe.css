@@ -1,0 +1,21 @@
+
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
+.row3{
+    display: flex;
+}
+
+.boxes{
+    width: 90px;
+    height: 90px;
+    /* background-color: cornflowerblue; */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red
+}

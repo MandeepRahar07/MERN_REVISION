@@ -1,0 +1,27 @@
+.container{
+    color: red;
+}
+.row1{
+    display: flex;
+}
+
+.row2{
+    display: flex;
+}
+
+.row3{
+    display: flex;
+}
+
+.bord{
+ 
+    border-radius: 5px;
+   border: solid 2px;
+   width: 20%;
+}
+.boxes{
+    border: solid red;
+    color: green;
+    width: 50px;
+    height: 40px;
+}
