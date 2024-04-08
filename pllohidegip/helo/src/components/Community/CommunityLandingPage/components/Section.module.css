@@ -1,0 +1,179 @@
+.maleDesignerAndLeatherTail {
+  height: 738px;
+  width: 1441px;
+  position: relative;
+  object-fit: cover;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.divelementorBackgroundOverl {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('./getstarted1.png');
+  
+  z-index: 1;
+}
+.craftingTimelessElegance {
+  margin: 0;
+  width: 572px;
+  position: relative;
+  font-size: inherit;
+  line-height: 52.8px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  max-width: 572.2000122070312px;
+}
+.divelementorElementmargin,
+.heading2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.divelementorElementmargin {
+  width: 670px;
+  padding: 0 0 19.589996337890625px;
+  box-sizing: border-box;
+  max-width: 117%;
+  flex-shrink: 0;
+}
+.blankLine,
+.fromTraditionTo {
+  margin: 0;
+  white-space: pre-wrap;
+}
+.heading5Container {
+  height: 48px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  max-width: 572.2000122070312px;
+}
+.divelementorElementmargin1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 9.20001220703125px var(--padding-xl) 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--text-button-size);
+}
+.getStarted {
+  position: relative;
+  font-size: var(--text-button-size);
+  letter-spacing: 0.01em;
+  font-family: var(--text-button);
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.ourServiceFrame {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl) var(--padding-21xl);
+  background-color: var(--color-white);
+  border-radius: var(--br-481xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.ourServiceFrame:hover {
+  background-color: var(--color-gainsboro);
+}
+.divelementorButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-332xl) 0 0;
+}
+.section,
+.section1 {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.section1 {
+  width: 592.2px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-3xs);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.section {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-96xl) var(--padding-94xl);
+  position: relative;
+  background-image: url(/public/section@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+  font-family: var(--font-ubuntu);
+}
+@media screen and (max-width: 1050px) {
+  .craftingTimelessElegance {
+    font-size: var(--font-size-19xl);
+    line-height: 42px;
+  }
+  .section {
+    padding-left: var(--padding-37xl);
+    padding-right: var(--padding-37xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .craftingTimelessElegance,
+  .heading5Container {
+    max-width: 100%;
+  }
+  .divelementorButtonWrapper {
+    padding-right: var(--padding-156xl);
+    box-sizing: border-box;
+  }
+  .section {
+    padding-top: var(--padding-56xl);
+    padding-bottom: var(--padding-56xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .craftingTimelessElegance {
+    font-size: var(--font-size-10xl);
+    line-height: 32px;
+  }
+  .heading5Container {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+  .divelementorButtonWrapper,
+  .section {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .section {
+    padding-left: var(--padding-xl);
+  }
+}

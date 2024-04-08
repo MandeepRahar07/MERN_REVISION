@@ -1,0 +1,310 @@
+.frameChild {
+  align-self: stretch;
+  height: 402px;
+  position: relative;
+  background-color: var(--color-saddlebrown-300);
+  display: none;
+}
+.contentGroupIcon {
+  width: 142px;
+  height: 51px;
+  position: relative;
+  object-fit: cover;
+}
+.phenvelopeFillIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.piiohidecompanyca {
+  position: relative;
+  white-space: nowrap;
+}
+.phenvelopeFillParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 16px;
+}
+.phphoneCallFillIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div {
+  position: relative;
+}
+.phphoneCallFillParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 16px;
+}
+.phmapPinLineFillIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.california62639,
+.drRichardson,
+.ranchview {
+  margin: 0;
+}
+.ranchview7658764DrContainer {
+  position: relative;
+  line-height: 160%;
+}
+.phoneandEmailFrame,
+.plantWateringAdvice {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 16px;
+}
+.plantWateringAdvice {
+  flex-direction: column;
+  gap: 24px 0;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+}
+.ourService {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.aboutUs,
+.community,
+.howItWorks,
+.ourFeatures,
+.ourService {
+  position: relative;
+}
+.aboutUsHowItWorksOurFeat,
+.ourServiceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.aboutUsHowItWorksOurFeat {
+  gap: 24px 0;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+}
+.ourServiceSection {
+  gap: 31px 0;
+}
+.moreLinks {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.faq,
+.moreLinks,
+.pricing,
+.team {
+  position: relative;
+}
+.moreLinksFrame,
+.pricingTeamFAQFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pricingTeamFAQFrame {
+  gap: 24px 0;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+}
+.moreLinksFrame {
+  gap: 31px 0;
+}
+.platformConnect {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.phinstagramLogoFillIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.ig {
+  height: 32px;
+  width: 32px;
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.phyoutubeLogoFillIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.yt {
+  height: 32px;
+  width: 32px;
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.phtwitterLogoFillIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tw {
+  height: 32px;
+  width: 32px;
+  border-radius: var(--br-81xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.phfacebookLogoFillIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.fb,
+.platformLogos {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.fb {
+  height: 32px;
+  width: 32px;
+  border-radius: var(--br-81xl);
+  display: flex;
+  align-items: flex-start;
+}
+.platformLogos {
+  gap: 0 24px;
+}
+.content,
+.platformConnectLogo,
+.platformLogos {
+  display: flex;
+  align-items: flex-start;
+}
+.platformConnectLogo {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 37px 0;
+}
+.content {
+  width: 1240px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  z-index: 1;
+}
+.copyrightPllohideAll {
+  position: relative;
+  z-index: 1;
+}
+.copyrightInfo,
+.copyrightInfoWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+.copyrightInfo {
+  flex: 1;
+  background-color: var(--color-saddlebrown-100);
+  justify-content: flex-start;
+  padding: var(--padding-4xs) var(--padding-496xl) var(--padding-5xs);
+  box-sizing: border-box;
+}
+.copyrightInfoWrapper,
+.rectangleParent {
+  align-self: stretch;
+  justify-content: center;
+  z-index: 4;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--text-button);
+}
+.rectangleParent {
+  background-color: var(--color-saddlebrown-300);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-53xl) 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-24xl);
+  z-index: 3;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-300);
+}
+@media screen and (max-width: 1200px) {
+  .copyrightInfo {
+    padding-left: var(--padding-238xl);
+    padding-right: var(--padding-238xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .copyrightInfo {
+    padding-left: var(--padding-109xl);
+    padding-right: var(--padding-109xl);
+    box-sizing: border-box;
+  }
+  .rectangleParent {
+    gap: var(--gap-24xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .moreLinks,
+  .ourService,
+  .platformConnect {
+    font-size: var(--font-size-lgi);
+  }
+  .copyrightInfo {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .rectangleParent {
+    padding-top: var(--padding-28xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

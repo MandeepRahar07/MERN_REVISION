@@ -1,0 +1,216 @@
+.base,
+.maskGroupIcon {
+  position: relative;
+  max-width: 100%;
+}
+.base {
+  height: 526px;
+  width: 1440px;
+  background-color: var(--color-saddlebrown-100);
+  display: none;
+}
+.maskGroupIcon {
+  align-self: stretch;
+  height: 336.2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.maskGroupWrapper {
+  height: 416px;
+  width: 293px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.maskGroupIcon1 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.maskGroupContainer {
+  height: 336px;
+  width: 313px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+}
+.community,
+.underlineIcon {
+  position: relative;
+  z-index: 1;
+}
+.community {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.underlineIcon {
+  align-self: stretch;
+  height: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.textCommunity {
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px 0;
+}
+.joinOurVibrant {
+  margin: 0;
+}
+.joinOurVibrantContainer {
+  width: 540px;
+  position: relative;
+  line-height: 27px;
+  display: inline-block;
+  z-index: 1;
+}
+.fill,
+.shadow {
+  height: 56px;
+  width: 222px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  display: none;
+}
+.shadow {
+  background-color: var(--color-saddlebrown-100);
+  box-shadow: 0 26px 40px rgba(0, 0, 0, 0.06);
+}
+.fill {
+  background-color: var(--color-white);
+}
+.icon,
+.label {
+  position: relative;
+  z-index: 2;
+}
+.label {
+  font-weight: 600;
+}
+.icon {
+  width: 8px;
+  display: inline-block;
+}
+.background,
+.iconWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.iconWrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-10xs);
+  font-size: var(--font-size-base);
+  font-family: var(--font-font-awesome-5-free);
+}
+.background {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: var(--padding-mini) var(--padding-16xl) var(--padding-sm);
+  gap: 0 27px;
+  z-index: 1;
+  text-align: center;
+  color: var(--color-saddlebrown-100);
+  font-family: var(--font-poppins);
+}
+.sectionContent,
+.sectionJoin {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sectionJoin {
+  gap: 30px 0;
+  font-size: var(--font-size-lg);
+}
+.sectionContent {
+  gap: 20px 0;
+}
+.frameParent,
+.frameSet,
+.sectionHeader {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.sectionHeader {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-sm);
+  min-width: 351px;
+}
+.frameParent,
+.frameSet {
+  flex-direction: row;
+}
+.frameParent {
+  flex: 1;
+  background-color: var(--color-saddlebrown-100);
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: var(--padding-33xl) var(--padding-109xl) var(--padding-39xl)
+    var(--padding-97xl);
+  gap: 0 25px;
+}
+.frameSet {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-35xl);
+  text-align: left;
+  font-size: var(--font-size-19xl);
+  color: var(--color-white);
+  font-family: var(--text-button);
+}
+@media screen and (max-width: 1050px) {
+  .community {
+    font-size: var(--font-size-11xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .sectionHeader {
+    min-width: 100%;
+  }
+  .frameParent {
+    padding: var(--padding-15xl) var(--padding-45xl) var(--padding-19xl)
+      var(--padding-39xl);
+    box-sizing: border-box;
+  }
+  .frameSet {
+    padding-bottom: var(--padding-16xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .community {
+    font-size: var(--font-size-4xl);
+  }
+  .frameParent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

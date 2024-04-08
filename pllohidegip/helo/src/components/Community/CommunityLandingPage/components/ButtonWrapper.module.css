@@ -1,0 +1,58 @@
+.connectSvgrepocomIcon {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.divicon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-saddlebrown-100);
+  height: 77px;
+  width: 78px;
+  position: relative;
+  border-radius: var(--br-8xs);
+}
+.heading3,
+.joinADynamic {
+  position: relative;
+  line-height: 24px;
+}
+.joinADynamic {
+  width: 429px;
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray-200);
+  display: flex;
+  align-items: center;
+}
+.buttonWrapper,
+.maskGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px 0;
+  max-width: 100%;
+}
+.buttonWrapper {
+  flex-direction: row;
+  gap: 0 22px;
+  text-align: left;
+  font-size: var(--text-button-size);
+  color: var(--color-saddlebrown-100);
+  font-family: var(--text-button);
+}
+@media screen and (max-width: 750px) {
+  .buttonWrapper {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading3 {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+}

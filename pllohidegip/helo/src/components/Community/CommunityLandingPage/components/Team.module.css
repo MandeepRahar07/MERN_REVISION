@@ -1,0 +1,119 @@
+.bg {
+  position: absolute;
+  top: -36px;
+  left: -89px;
+  border-radius: var(--br-3xl);
+  background-color: var(--color-gray-400);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 684px;
+  height: 452px;
+}
+.leatherBagForTravelWithHe {
+  position: absolute;
+  top: -8px;
+  left: -45px;
+  width: 589px;
+  height: 393px;
+  object-fit: cover;
+  z-index: 1;
+}
+.aboutUs,
+.photo {
+  position: relative;
+}
+.photo {
+  height: 379px;
+  width: 506px;
+  border-radius: 0 var(--br-51xl) 0 var(--br-101xl);
+  border: 5px solid var(--color-saddlebrown-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-width: 506px;
+  max-width: 100%;
+}
+.aboutUs {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.underlineIcon {
+  align-self: stretch;
+  height: 8px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.headerGroup {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px 0;
+}
+.embraceTheOpportunity,
+.plloHideIs {
+  margin: 0;
+}
+.plloHideIsContainer {
+  width: 580px;
+  position: relative;
+  font-size: var(--text-button-size);
+  line-height: 27px;
+  color: var(--color-dimgray-100);
+  display: inline-block;
+}
+.elementMargin,
+.team {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.elementMargin {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px 0;
+  min-width: 580px;
+}
+.team {
+  width: 1168px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-19xl);
+  color: var(--color-black);
+  font-family: var(--text-button);
+}
+@media screen and (max-width: 1200px) {
+  .elementMargin,
+  .photo {
+    flex: 1;
+  }
+  .team {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .aboutUs {
+    font-size: var(--font-size-11xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .elementMargin,
+  .photo {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .aboutUs {
+    font-size: var(--font-size-4xl);
+  }
+  .plloHideIsContainer {
+    font-size: var(--font-size-base);
+    line-height: 22px;
+  }
+}

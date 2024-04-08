@@ -1,0 +1,114 @@
+.divelementorbackgroundoverlay,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.divelementorbackgroundoverlay {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1260px;
+  justify-content: space-between;
+  padding: 0 var(--padding-mid);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.rectangleParent {
+  width: 1260px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  justify-content: center;
+  padding: var(--padding-smi);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  text-align: left;
+  font-size: var(--text-button-size);
+  color: var(--color-black);
+  font-family: var(--text-button);
+}
+.frameChild {
+    height: 90px;
+    width: 1260px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    display: none;
+    max-width: 100%;
+}
+.headingIcon {
+    height: 57px;
+    width: 157px;
+    position: relative;
+    object-fit: cover;
+}
+.fAQCards,
+.reduceCarbonFootprint {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.fAQCards {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 var(--padding-smi);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.reduceCarbonFootprint {
+  width: 854px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+    .fAQCards {
+      display: none;
+    }
+    .reduceCarbonFootprint {
+      width: 0;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .reduceCarbonFootprint {
+      gap: 0 289px;
+    }
+}
+.aboutUs,
+.howItWorks,
+.ourFeature {
+  position: relative;
+  white-space: nowrap;
+}
+.community1,
+.faq,
+.team {
+  position: relative;
+}
+
+.logIn {
+  position: relative;
+  font-size: var(--text-button-size);
+  letter-spacing: 0.01em;
+  font-family: var(--text-button);
+  color: var(--color-white);
+  text-align: left;
+}
+.getStarted {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl) var(--padding-19xl);
+  background-color: transparent;
+  border-radius: var(--br-481xl);
+  background: linear-gradient(129.11deg, #a77041, #673821);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}

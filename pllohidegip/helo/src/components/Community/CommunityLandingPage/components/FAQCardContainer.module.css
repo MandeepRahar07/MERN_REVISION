@@ -1,0 +1,201 @@
+.howFrequentlyShould {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: calc(100% - 24px);
+}
+.removeIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.theTypeOf {
+  width: 1028px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: -0.01em;
+  line-height: 130%;
+  color: var(--color-gray-500);
+  display: inline-block;
+}
+.faqCardsdefault {
+  align-self: stretch;
+  background-color: var(--color-saddlebrown-100);
+  box-shadow: 0 34px 60px 2px rgba(51, 67, 53, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  gap: 32px 0;
+  max-width: 100%;
+  color: var(--lotion-white);
+}
+.howFrequentlyShould1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: calc(100% - 24px);
+}
+.addIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.faqCardsdefault1 {
+  align-self: stretch;
+  background-color: var(--color-saddlebrown-300);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.howFrequentlyShould2 {
+  margin: 0;
+  height: 39px;
+  width: 1004px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 110%;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: flex-end;
+  min-width: 653px;
+  max-width: 100%;
+}
+.addIcon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.faqCardsdefault2 {
+  align-self: stretch;
+  background-color: var(--color-saddlebrown-300);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.howFrequentlyShould3 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: calc(100% - 24px);
+}
+.addIcon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.fAQCardContainer,
+.faqCardsdefault3 {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.faqCardsdefault3 {
+  background-color: var(--color-saddlebrown-300);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+}
+.fAQCardContainer {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px 0;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-saddlebrown-100);
+  font-family: var(--text-button);
+}
+@media screen and (max-width: 1050px) {
+  .howFrequentlyShould2 {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .faqCardsdefault {
+    gap: 32px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .howFrequentlyShould,
+  .howFrequentlyShould1,
+  .howFrequentlyShould2,
+  .howFrequentlyShould3 {
+    font-size: var(--font-size-lg);
+    line-height: 19px;
+  }
+}
+
+/* .faqCardsdefault.active {
+  background-color: brown;
+} */
+.faqCard {
+  align-self: stretch;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl);
+  box-sizing: border-box;
+  gap: 32px 0;
+  max-width: 100%;
+  background-color: #673821; /* Set default background color */
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  cursor: pointer; /* Add cursor pointer to indicate clickable */
+}
+
+.faqCard.active {
+  color: #673821;
+  background-color: var(--color-saddlebrown-300); /* Change background color when active */
+}
+

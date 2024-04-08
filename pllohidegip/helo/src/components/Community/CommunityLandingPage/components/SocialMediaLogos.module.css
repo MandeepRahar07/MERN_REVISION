@@ -1,0 +1,86 @@
+.bg {
+  position: absolute;
+  top: calc(50% - 226px);
+  left: calc(50% - 342px);
+  border-radius: var(--br-3xl);
+  background-color: var(--black);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 684px;
+  height: 452px;
+  opacity: 0.32;
+  z-index: 2;
+}
+.closeUpOfAShoemakerMeasur {
+  position: absolute;
+  top: -23px;
+  left: -7px;
+  width: 353px;
+  height: 236px;
+  object-fit: cover;
+  z-index: 1;
+}
+.photo {
+  align-self: stretch;
+  height: 190px;
+  position: relative;
+  border-radius: 0 var(--br-31xl) 0 0;
+  border: 5px solid var(--color-whitesmoke);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameChild {
+  width: 340px;
+  height: 198px;
+  position: relative;
+  background-color: var(--color-saddlebrown-100);
+  display: none;
+  max-width: 100%;
+}
+.enhancedCollaboration {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 1;
+}
+.connectDesignersSuppliers {
+  width: 311px;
+  height: 113px;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 27px;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.rectangleParent,
+.socialMediaLogos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.rectangleParent {
+  align-self: stretch;
+  background-color: var(--color-saddlebrown-100);
+  padding: var(--padding-smi) var(--padding-xs) var(--padding-16xl)
+    var(--padding-mid);
+  box-sizing: border-box;
+  gap: 10px 0;
+}
+.socialMediaLogos {
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--text-button);
+}
+@media screen and (max-width: 450px) {
+  .enhancedCollaboration {
+    font-size: var(--font-size-lg);
+  }
+}
