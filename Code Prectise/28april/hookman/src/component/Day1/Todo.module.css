@@ -1,0 +1,31 @@
+.thead th {
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.table th,
+.table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.delete{
+    background-color: red;
+    color: white;
+    font-weight: 700;
+}
+.button{
+    background-color: gray;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
