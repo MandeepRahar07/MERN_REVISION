@@ -6,8 +6,6 @@ import { adddata } from "../Redux/AppReducer/action";
 
 export const AddNote = () => {
 
-
-
 const [data, setData] = useState({
      title : "",
      description : ""
