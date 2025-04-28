@@ -1,0 +1,23 @@
+{
+    "data" : [
+        {
+            "id" : 1,
+            "name" : "mandeep rahar",
+            "place" : "bhiwani"
+            
+        },
+        {
+            "id" : 2,
+            "name" : "randeep rahar",
+            "place" : "bhiwani"
+            
+        }
+        ,
+        {
+            "id" : 3,
+            "name" : "ssandeep rahar",
+            "place" : "bhiwani"
+            
+        }
+    ]
+}
