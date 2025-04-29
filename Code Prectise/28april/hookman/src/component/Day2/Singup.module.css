@@ -1,0 +1,84 @@
+.mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #dfe6e9);
+    position: relative;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50px); /* थोडा ऊपर */
+    width: 320px;
+}
+
+.heading {
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.listitem {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.listitem > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li > label {
+    margin-right: 10px;
+}
+li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+li label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    width: 80px;
+    text-align: right; 
+}
+
+li input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    
+}
+
+li input:focus {
+    border-color: #3498db;
+}
+
+.buttonbox {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.buttonbox button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonbox button:hover {
+    background-color: #2980b9;
+}

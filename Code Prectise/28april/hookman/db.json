@@ -16,9 +16,26 @@
       "status": false
     },
     {
-      "id": "9a85",
-      "name": "Drink Water",
-      "status": false
+      "id": "413b",
+      "name": "bhudu",
+      "status": true
+    },
+    {
+      "id": "c9cf",
+      "name": "mandeep",
+      "status": true
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "email": "kea-connect@kea.care",
+      "password": "dsw34dwf"
+    },
+    {
+      "id": "4266",
+      "email": "mandeep@rahar",
+      "password": "1234"
     }
   ]
 }

@@ -13,6 +13,9 @@ function Navbar() {
         <li className={styles.navItem} onClick={ ()=> navigate("/counterapp")}>Counter Application</li>
         <li className={styles.navItem} onClick={ ()=> navigate("/showhidepassword")}> Show/Hide Password</li>
         <li className={styles.navItem} onClick={ ()=> navigate("/todo")}>Todo List</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/signup")}>Sign Up</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/login")}>Log In</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/search")}>Search Item</li>
       </ul>
     </div>
   );

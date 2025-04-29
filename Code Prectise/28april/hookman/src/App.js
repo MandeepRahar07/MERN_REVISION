@@ -6,6 +6,9 @@ import CounterApp from './component/Day1/CounterApp';
 import ShowHidePassword from './component/Day1/ShowHidePassword';
 import Todo from './component/Day1/Todo';
 import AddTodo from './component/Day1/AddTodo';
+import Signup from './component/Day2/Signup';
+import Login from './component/Day2/Login';
+import Search from './component/Day2/Search';
 function App() {
   return (
     <div className="App">
@@ -16,6 +19,9 @@ function App() {
       <Route  path='/showhidepassword' element= {<ShowHidePassword/>}>Show Hide Password</Route>
       <Route path='/todo' element = {<Todo/>}>Todo List</Route>
       <Route path='/addtodo' element = {<AddTodo/>}>Add Todo Item</Route>
+      <Route path='/signup' element = {<Signup/>}> Sign Up </Route>
+      <Route path='/login' element = {<Login/>}> Log In </Route>
+      <Route path='/search' element = {<Search/>}></Route>
      </Routes>
     </div>
   );
