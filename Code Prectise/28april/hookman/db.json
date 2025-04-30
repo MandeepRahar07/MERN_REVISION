@@ -37,5 +37,38 @@
       "email": "mandeep@rahar",
       "password": "1234"
     }
+  ],
+  "Detail": [
+    {
+      "id": "3a20",
+      "name": "mandeep rahar",
+      "age": "werwerwe",
+      "email": "vedican.v44@gmail.com"
+    }
+  ],
+  "Image" :[
+    {
+      "id" : 1,
+      "url" : "https://media-hosting.imagekit.io/8b412d58bdfb407b/Screenshot%202025-01-08%20200424.png?Expires=1840622257&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2Ke9tn4z3GHsdD7aXsbFDl3B7qesg~Co0CnEr7Cx1vwQOVJPCuNkgB3-YyLuB-8QUZJT52fP6rNlGVH0oNCKII9f-Qyl1ydFextu8euXq8STbgXAK-oh4cE8d-HIeezOgZ7G9fQ18Etl-t9OFJ8BDPS1oyol79Km1hN3bN5aIdwXdQlFCymDg6lvtBf1O4gQR7wCE-ani~v1-yh4MfwEWdMaul80iFmrmDLpqozjW8qyvYnMalqDlQLpNLfx3SegUcjNrd-lQ6rY~vrhNsjEKNtqCJNxUGN2d7uX-lcZ2rakM4PrfQx3vnaw-0Xi8cLZuMhPk11cfDb-jl4KAR~ORg__"
+    },
+    {
+      "id" : 2,
+      "url" : "https://media-hosting.imagekit.io/8d9e17d8a27543c7/hlo.png?Expires=1840622502&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gS6RzMBHrSKkusJddstV4ebesU-RhLTuSHrcsDSw-11gwb2E~9XjXCCZp20fUv8iE0Hwt8oKkXAHyc4dXm8zvq8RCBqJsjGYqyYO4cOXPKhsosXa3uRolBQ~-tjPri356zRDK7iD9Bd1ET3IUQCvvG8U3cJ5VLGwuk98w5fwzHKslBofYrCvCVOxuf0FQnvdbQWUyJAzH273yCavZdvRJhroUIFGh7JalC4nzpx3xF3E0XWt0luNo9TdrDuyt83H1OAoHppllA95I77izF0xoig-uW5PL44RvutNapI8FoK~VgQ3PnPfGu4IApt1S0Xd0F6VCP8wBXiSg-06~HpDcg__"
+    },
+    {
+      "id" : 3,
+      "url" : "https://media-hosting.imagekit.io/8b412d58bdfb407b/Screenshot%202025-01-08%20200424.png?Expires=1840622257&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2Ke9tn4z3GHsdD7aXsbFDl3B7qesg~Co0CnEr7Cx1vwQOVJPCuNkgB3-YyLuB-8QUZJT52fP6rNlGVH0oNCKII9f-Qyl1ydFextu8euXq8STbgXAK-oh4cE8d-HIeezOgZ7G9fQ18Etl-t9OFJ8BDPS1oyol79Km1hN3bN5aIdwXdQlFCymDg6lvtBf1O4gQR7wCE-ani~v1-yh4MfwEWdMaul80iFmrmDLpqozjW8qyvYnMalqDlQLpNLfx3SegUcjNrd-lQ6rY~vrhNsjEKNtqCJNxUGN2d7uX-lcZ2rakM4PrfQx3vnaw-0Xi8cLZuMhPk11cfDb-jl4KAR~ORg__"
+    },  {
+      "id" : 4,
+      "url" : "https://media-hosting.imagekit.io/8b412d58bdfb407b/Screenshot%202025-01-08%20200424.png?Expires=1840622257&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=2Ke9tn4z3GHsdD7aXsbFDl3B7qesg~Co0CnEr7Cx1vwQOVJPCuNkgB3-YyLuB-8QUZJT52fP6rNlGVH0oNCKII9f-Qyl1ydFextu8euXq8STbgXAK-oh4cE8d-HIeezOgZ7G9fQ18Etl-t9OFJ8BDPS1oyol79Km1hN3bN5aIdwXdQlFCymDg6lvtBf1O4gQR7wCE-ani~v1-yh4MfwEWdMaul80iFmrmDLpqozjW8qyvYnMalqDlQLpNLfx3SegUcjNrd-lQ6rY~vrhNsjEKNtqCJNxUGN2d7uX-lcZ2rakM4PrfQx3vnaw-0Xi8cLZuMhPk11cfDb-jl4KAR~ORg__"
+    },
+    {
+      "id" : 5,
+      "url" : "https://media-hosting.imagekit.io/8d9e17d8a27543c7/hlo.png?Expires=1840622502&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gS6RzMBHrSKkusJddstV4ebesU-RhLTuSHrcsDSw-11gwb2E~9XjXCCZp20fUv8iE0Hwt8oKkXAHyc4dXm8zvq8RCBqJsjGYqyYO4cOXPKhsosXa3uRolBQ~-tjPri356zRDK7iD9Bd1ET3IUQCvvG8U3cJ5VLGwuk98w5fwzHKslBofYrCvCVOxuf0FQnvdbQWUyJAzH273yCavZdvRJhroUIFGh7JalC4nzpx3xF3E0XWt0luNo9TdrDuyt83H1OAoHppllA95I77izF0xoig-uW5PL44RvutNapI8FoK~VgQ3PnPfGu4IApt1S0Xd0F6VCP8wBXiSg-06~HpDcg__"
+    },
+    {
+      "id" : 6,
+      "url" : "https://media-hosting.imagekit.io/8d9e17d8a27543c7/hlo.png?Expires=1840622502&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gS6RzMBHrSKkusJddstV4ebesU-RhLTuSHrcsDSw-11gwb2E~9XjXCCZp20fUv8iE0Hwt8oKkXAHyc4dXm8zvq8RCBqJsjGYqyYO4cOXPKhsosXa3uRolBQ~-tjPri356zRDK7iD9Bd1ET3IUQCvvG8U3cJ5VLGwuk98w5fwzHKslBofYrCvCVOxuf0FQnvdbQWUyJAzH273yCavZdvRJhroUIFGh7JalC4nzpx3xF3E0XWt0luNo9TdrDuyt83H1OAoHppllA95I77izF0xoig-uW5PL44RvutNapI8FoK~VgQ3PnPfGu4IApt1S0Xd0F6VCP8wBXiSg-06~HpDcg__"
+    }
   ]
 }

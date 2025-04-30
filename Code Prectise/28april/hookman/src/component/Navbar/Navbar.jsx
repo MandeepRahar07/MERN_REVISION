@@ -16,6 +16,11 @@ function Navbar() {
         <li className={styles.navItem} onClick={ ()=> navigate("/signup")}>Sign Up</li>
         <li className={styles.navItem} onClick={ ()=> navigate("/login")}>Log In</li>
         <li className={styles.navItem} onClick={ ()=> navigate("/search")}>Search Item</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/form")}>Form</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/form1")}>Form 2</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/pagination")}>Paginaion</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/modal")}>Modal</li>
+        <li className={styles.navItem} onClick={ ()=> navigate("/image")}>Image</li>
       </ul>
     </div>
   );

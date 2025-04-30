@@ -9,6 +9,11 @@ import AddTodo from './component/Day1/AddTodo';
 import Signup from './component/Day2/Signup';
 import Login from './component/Day2/Login';
 import Search from './component/Day2/Search';
+import MultiStepForm from './component/Day2/Form/Personal';
+import MainForm from './component/Day2/Form2/MainForm';
+import Pagination from './component/Day3/Pagination';
+import ModalOpen from './component/Day3/ModalOpen';
+import ImageGalary from './component/Day3/ImageGalary';
 function App() {
   return (
     <div className="App">
@@ -21,7 +26,12 @@ function App() {
       <Route path='/addtodo' element = {<AddTodo/>}>Add Todo Item</Route>
       <Route path='/signup' element = {<Signup/>}> Sign Up </Route>
       <Route path='/login' element = {<Login/>}> Log In </Route>
-      <Route path='/search' element = {<Search/>}></Route>
+      <Route path='/search' element = {<Search/>}>Search Item</Route>
+      <Route path='/form' element = {<MultiStepForm/>}> MultiStepForm</Route>
+      <Route  path='/form1' element = {<MainForm/>}>MultiStepForm 2</Route>
+      <Route path='/pagination' element = {<Pagination/>}> Pagination Functionality</Route>
+      <Route path = "/modal" element={<ModalOpen/>}> Modal</Route>
+      <Route path='/image' element = {<ImageGalary/>}></Route>
      </Routes>
     </div>
   );
