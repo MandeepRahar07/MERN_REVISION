@@ -70,5 +70,30 @@
       "id" : 6,
       "url" : "https://media-hosting.imagekit.io/8d9e17d8a27543c7/hlo.png?Expires=1840622502&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=gS6RzMBHrSKkusJddstV4ebesU-RhLTuSHrcsDSw-11gwb2E~9XjXCCZp20fUv8iE0Hwt8oKkXAHyc4dXm8zvq8RCBqJsjGYqyYO4cOXPKhsosXa3uRolBQ~-tjPri356zRDK7iD9Bd1ET3IUQCvvG8U3cJ5VLGwuk98w5fwzHKslBofYrCvCVOxuf0FQnvdbQWUyJAzH273yCavZdvRJhroUIFGh7JalC4nzpx3xF3E0XWt0luNo9TdrDuyt83H1OAoHppllA95I77izF0xoig-uW5PL44RvutNapI8FoK~VgQ3PnPfGu4IApt1S0Xd0F6VCP8wBXiSg-06~HpDcg__"
     }
-  ]
+  ],
+   "dummyData" : [
+    { "id": 1, "name": "Alice", "age": 25, "city": "Mumbai" },
+    { "id": 2, "name": "Bob", "age": 30, "city": "Delhi" },
+    { "id": 3, "name": "Charlie", "age": 22, "city": "Bangalore" },
+    { "id": 4, "name": "David", "age": 28, "city": "Hyderabad" },
+    { "id": 5, "name": "Eva", "age": 26, "city": "Chennai" },
+    { "id": 6, "name": "Farhan", "age": 35, "city": "Kolkata" },
+    { "id": 7, "name": "Grace", "age": 29, "city": "Pune" },
+    { "id": 8, "name": "Henry", "age": 24, "city": "Ahmedabad" }
+  ],
+  "table" : 
+    [
+      { "id": 1, "name": "Alice", "age": 28, "email": "alice@example.com", "country": "USA" },
+      { "id": 2, "name": "Bob", "age": 34, "email": "bob@example.com", "country": "Canada" },
+      { "id": 3, "name": "Charlie", "age": 22, "email": "charlie@example.com", "country": "UK" },
+      { "id": 4, "name": "David", "age": 45, "email": "david@example.com", "country": "Germany" },
+      { "id": 5, "name": "Eva", "age": 31, "email": "eva@example.com", "country": "France" },
+      { "id": 6, "name": "Frank", "age": 29, "email": "frank@example.com", "country": "India" },
+      { "id": 7, "name": "Grace", "age": 26, "email": "grace@example.com", "country": "Australia" },
+      { "id": 8, "name": "Hannah", "age": 39, "email": "hannah@example.com", "country": "Netherlands" },
+      { "id": 9, "name": "Isaac", "age": 33, "email": "isaac@example.com", "country": "Brazil" },
+      { "id": 10, "name": "Jack", "age": 27, "email": "jack@example.com", "country": "Japan" }
+    ]
+    
+  
 }

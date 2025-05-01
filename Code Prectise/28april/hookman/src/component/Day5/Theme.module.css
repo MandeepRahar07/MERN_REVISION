@@ -1,0 +1,10 @@
+
+.Mainbox-dark{
+    color: rgb(255, 254, 254);
+    background-color: rgb(87, 84, 84);
+}
+
+.Mainbox-light{
+    color: rgb(37, 36, 36);
+    background-color: rgb(255, 255, 255);
+}
